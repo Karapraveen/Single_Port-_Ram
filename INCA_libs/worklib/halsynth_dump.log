@@ -1,0 +1,6 @@
+General information about this run 
+-- piranha worklib.tb:module
+-- TOOL:	cfe64	15.20.051-s(15.20.s051)
+-- cfe64 Build : Mon May  7 17:15:12 IST 2018 ldvopt246
+-- Options : +TOOLNAME halsynth -HAL ALL -BB_SIG_SIZE 16384 +DISABLE -MULTI_DRIVEN_REG TRI -NOLOG +PRIM_TRI +FSM_RULE_CHECKS -SYNTHESIS ALL -IGNORE_COMB_INIT -VITAL_BLACKBOX +MDARRAY_ON +SYSVLOG1 +SYSAP +ALLOW_FOREACH +ALLOW_SV_NESTED_IFACE +ALLOW_SV_IFACE_ARRAY +ALLOW_SV_IFACE_FUNC_TASK +IFACE_GENNAME_SUPPORT -CLOG2SUPPORT +ALLOW_UNPCKARR_PARAM +ALLOW_OOMR_FIELD_SELECT +SYSAP +ASSIGN_REPLOPR +ALLOW_INSIDE_SUPPORT -DEFINES /cad/install/INCISIVE152/tools/hal/files/hal.def -DUMP +RULES_LIST +HAL_SIDEFILE hal.log -PRAGMA ALL -cdslib /home/vlsi5/praveen_design/single_port_RAM/cds.lib worklib.tb:module
+-- SMV File is :/home/vlsi5/praveen_design/single_port_RAM/INCA_libs/worklib/tb/module/tb.smv

@@ -1,0 +1,638 @@
+hal(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/vlsi5/praveen_design/single_port_RAM/cds.lib -logfile hal.log worklib.tb:module.
+hal: Snapshot:  worklib.tb:module.
+hal: Workspace: /home/vlsi5/praveen_design/single_port_RAM.
+hal: Date: Mon Dec 18 10:53:44 IST 2023.
+
+hal: Running on elaborated SNAPSHOT.....
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+module tb;
+|
+halcheck: *W,DIFFMN (./simulation/ram_tb.v,1|0): Module name 'tb' differs from file name 'ram_tb.v'.
+module tb;
+|
+halcheck: *W,NEEDIO (./simulation/ram_tb.v,1|0): Top-level module 'tb' has no inputs/outputs/inouts.
+module tb;
+|
+halcheck: *N,IDLENG (./simulation/ram_tb.v,1|0): Identifier name 'tb' is not of appropriate length (4 to 16 characters).
+  ( 	.clk(clk),
+|
+halcheck: *W,CTLCHR (./simulation/ram_tb.v,15|0): HDL source line contains one or more control characters.
+                        	.addr(addr),
+|
+halcheck: *W,CTLCHR (./simulation/ram_tb.v,16|0): HDL source line contains one or more control characters.
+                        	.data(data),
+|
+halcheck: *W,CTLCHR (./simulation/ram_tb.v,17|0): HDL source line contains one or more control characters.
+                        	.cs(cs),
+|
+halcheck: *W,CTLCHR (./simulation/ram_tb.v,18|0): HDL source line contains one or more control characters.
+   							.we(we),
+|
+halcheck: *W,CTLCHR (./simulation/ram_tb.v,19|0): HDL source line contains one or more control characters.
+   							.oe(oe)
+|
+halcheck: *W,CTLCHR (./simulation/ram_tb.v,20|0): HDL source line contains one or more control characters.
+      repeat (1) @(posedge clk) addr <= i; we <= 1; cs <=1; oe <= 0; tb_data <= $random;
+|
+halcheck: *W,MAXLEN (./simulation/ram_tb.v,33|0): The HDL source line is 88 characters, which exceeds the recommended length of 80 characters.
+  parameter ADDR_WIDTH = 4;
+|
+halcheck: *W,PRMVAL (./simulation/ram_tb.v,2|0): Bit width not specified for parameter 'ADDR_WIDTH'.
+  parameter DATA_WIDTH = 32;
+|
+halcheck: *W,PRMVAL (./simulation/ram_tb.v,3|0): Bit width not specified for parameter 'DATA_WIDTH'.
+  parameter DATA_WIDTH = 32;
+|
+halcheck: *W,PRMBSE (./simulation/ram_tb.v,3|0): Base not specified for parameter 'DATA_WIDTH'.
+  parameter DEPTH = 16;
+|
+halcheck: *W,PRMVAL (./simulation/ram_tb.v,4|0): Bit width not specified for parameter 'DEPTH'.
+  parameter DEPTH = 16;
+|
+halcheck: *W,PRMBSE (./simulation/ram_tb.v,4|0): Base not specified for parameter 'DEPTH'.
+  always #10 clk = ~clk;
+|
+halcheck: *W,NBGEND (./simulation/ram_tb.v,24|0): Missing begin/end statement in the 'always' block.
+  always #10 clk = ~clk;
+|
+halcheck: *W,EVTRIG (./simulation/ram_tb.v,24|0): Always block with no event trigger at the start of the block in module 'tb'.
+  always #10 clk = ~clk;
+|
+halcheck: *W,SEPLIN (./simulation/ram_tb.v,24|0): Use a separate line for each HDL statement.
+  always #10 clk = ~clk;
+|
+halcheck: *W,RDBFAS (./simulation/ram_tb.v,24|0): Register 'clk', assigned using blocking assignment, is being read before getting assigned.
+  initial begin
+|
+halcheck: *W,NOBLKN (./simulation/ram_tb.v,27|0): Each block should be labeled with a meaningful name.
+    {clk, cs, we, addr, tb_data, oe} <= 0;
+|
+halcheck: *W,IMPDTC (./simulation/ram_tb.v,28|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit tb.
+    {clk, cs, we, addr, tb_data, oe} <= 0;
+|
+halcheck: *W,EXTEND (./simulation/ram_tb.v,28|0): Extension of '0' bits in a constant in module/design-unit tb.
+    {clk, cs, we, addr, tb_data, oe} <= 0;
+|
+halcheck: *W,REVROP (./simulation/ram_tb.v,28|0): Register 'clk' is being read/assigned outside the process in which it was assigned using a blocking assignment.
+halcheck: (./simulation/ram_tb.v,24): Assigned using blocking assignment in this process.
+    repeat (2) @ (posedge clk);
+|
+halcheck: *W,SEPLIN (./simulation/ram_tb.v,30|0): Use a separate line for each HDL statement.
+    repeat (2) @ (posedge clk);
+|
+halcheck: *W,RDBFAS (./simulation/ram_tb.v,30|0): Register 'clk', assigned using blocking assignment, is being read before getting assigned.
+    repeat (2) @ (posedge clk);
+|
+halcheck: *W,REVROP (./simulation/ram_tb.v,30|0): Register 'clk' is being read/assigned outside the process in which it was assigned using a blocking assignment.
+halcheck: (./simulation/ram_tb.v,24): Assigned using blocking assignment in this process.
+      repeat (1) @(posedge clk) addr <= i; we <= 1; cs <=1; oe <= 0; tb_data <= $random;
+|
+halcheck: *W,SEPLIN (./simulation/ram_tb.v,33|0): Use a separate line for each HDL statement.
+      repeat (1) @(posedge clk) addr <= i; we <= 1; cs <=1; oe <= 0; tb_data <= $random;
+|
+halcheck: *W,RDBFAS (./simulation/ram_tb.v,33|0): Register 'clk', assigned using blocking assignment, is being read before getting assigned.
+      repeat (1) @(posedge clk) addr <= i; we <= 1; cs <=1; oe <= 0; tb_data <= $random;
+|
+halcheck: *W,REVROP (./simulation/ram_tb.v,33|0): Register 'clk' is being read/assigned outside the process in which it was assigned using a blocking assignment.
+halcheck: (./simulation/ram_tb.v,24): Assigned using blocking assignment in this process.
+      repeat (1) @(posedge clk) addr <= i; we <= 1; cs <=1; oe <= 0; tb_data <= $random;
+|
+halcheck: *W,IMPDTC (./simulation/ram_tb.v,33|0): Expression 'i' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit tb.
+      repeat (1) @(posedge clk) addr <= i; we <= 1; cs <=1; oe <= 0; tb_data <= $random;
+|
+halcheck: *W,UEASTR (./simulation/ram_tb.v,33|0): Unequal length operands in assignment in module/design-unit tb. Length of RHS is greater than LHS.
+halcheck: (./simulation/ram_tb.v,33): LHS 'addr' (unsigned) - 4 bit(s), RHS 'i' (signed) - 32 bit(s). 28 most significant bit(s) will be lost.
+      repeat (1) @(posedge clk) addr <= i; we <= 1; cs <=1; oe <= 0; tb_data <= $random;
+|
+halcheck: *W,IMPDTC (./simulation/ram_tb.v,33|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit tb.
+      repeat (1) @(posedge clk) addr <= i; we <= 1; cs <=1; oe <= 0; tb_data <= $random;
+|
+halcheck: *W,INTTOB (./simulation/ram_tb.v,33|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit tb.
+      repeat (1) @(posedge clk) addr <= i; we <= 1; cs <=1; oe <= 0; tb_data <= $random;
+|
+halcheck: *W,TRUNCZ (./simulation/ram_tb.v,33|0): Truncation in constant conversion without a loss of bits in module/design-unit tb.
+      repeat (1) @(posedge clk) addr <= i; we <= 1; cs <=1; oe <= 0; tb_data <= $random;
+|
+halcheck: *W,IMPDTC (./simulation/ram_tb.v,33|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit tb.
+      repeat (1) @(posedge clk) addr <= i; we <= 1; cs <=1; oe <= 0; tb_data <= $random;
+|
+halcheck: *W,BADSYS (./simulation/ram_tb.v,33|0): System task $random in module 'tb' is ignored.
+      repeat (1) @(posedge clk) addr <= i; we <= 0; cs <= 1; oe <= 1;
+|
+halcheck: *W,SEPLIN (./simulation/ram_tb.v,37|0): Use a separate line for each HDL statement.
+      repeat (1) @(posedge clk) addr <= i; we <= 0; cs <= 1; oe <= 1;
+|
+halcheck: *W,RDBFAS (./simulation/ram_tb.v,37|0): Register 'clk', assigned using blocking assignment, is being read before getting assigned.
+      repeat (1) @(posedge clk) addr <= i; we <= 0; cs <= 1; oe <= 1;
+|
+halcheck: *W,REVROP (./simulation/ram_tb.v,37|0): Register 'clk' is being read/assigned outside the process in which it was assigned using a blocking assignment.
+halcheck: (./simulation/ram_tb.v,24): Assigned using blocking assignment in this process.
+      repeat (1) @(posedge clk) addr <= i; we <= 0; cs <= 1; oe <= 1;
+|
+halcheck: *W,IMPDTC (./simulation/ram_tb.v,37|0): Expression 'i' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit tb.
+      repeat (1) @(posedge clk) addr <= i; we <= 0; cs <= 1; oe <= 1;
+|
+halcheck: *W,UEASTR (./simulation/ram_tb.v,37|0): Unequal length operands in assignment in module/design-unit tb. Length of RHS is greater than LHS.
+halcheck: (./simulation/ram_tb.v,37): LHS 'addr' (unsigned) - 4 bit(s), RHS 'i' (signed) - 32 bit(s). 28 most significant bit(s) will be lost.
+      repeat (1) @(posedge clk) addr <= i; we <= 0; cs <= 1; oe <= 1;
+|
+halcheck: *W,IMPDTC (./simulation/ram_tb.v,37|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit tb.
+      repeat (1) @(posedge clk) addr <= i; we <= 0; cs <= 1; oe <= 1;
+|
+halcheck: *W,INTTOB (./simulation/ram_tb.v,37|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit tb.
+      repeat (1) @(posedge clk) addr <= i; we <= 0; cs <= 1; oe <= 1;
+|
+halcheck: *W,TRUNCZ (./simulation/ram_tb.v,37|0): Truncation in constant conversion without a loss of bits in module/design-unit tb.
+      repeat (1) @(posedge clk) addr <= i; we <= 0; cs <= 1; oe <= 1;
+|
+halcheck: *W,IMPDTC (./simulation/ram_tb.v,37|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit tb.
+    #2000 $finish;
+|
+halcheck: *W,BADSYS (./simulation/ram_tb.v,40|0): System task $finish in module 'tb' is ignored.
+  assign data = !oe ? tb_data : 'hz;
+|
+halcheck: *W,SYNTXZ (./simulation/ram_tb.v,25|0): Synthesizing 'x'/'z' values in module 'tb'.
+  single_port_sync_ram #(.DATA_WIDTH(DATA_WIDTH)) u0
+|
+halcheck: *N,IDLENG (./simulation/ram_tb.v,14|0): Identifier name 'u0' is not of appropriate length (4 to 16 characters).
+module single_port_sync_ram 
+|
+halcheck: *N,IDLENG (./simulation/single_ram.v,1|0): Identifier name 'single_port_sync_ram' is not of appropriate length (4 to 16 characters).
+module single_port_sync_ram 
+|
+halcheck: *W,DIFFMN (./simulation/single_ram.v,1|0): Module name 'single_port_sync_ram' differs from file name 'single_ram.v'.
+module single_port_sync_ram 
+|
+halcheck: *N,PRTCNT (./simulation/single_ram.v,1|0): Module/Entity 'single_port_sync_ram' contains '6' ports.
+halcheck: (./simulation/single_ram.v,1): Number of Input ports: 5.
+halcheck: (./simulation/single_ram.v,1): Number of Inout ports: 1.
+  ( 	input 					clk,
+|
+halcheck: *W,CTLCHR (./simulation/single_ram.v,7|0): HDL source line contains one or more control characters.
+   		input [ADDR_WIDTH-1:0]	addr,
+|
+halcheck: *W,CTLCHR (./simulation/single_ram.v,8|0): HDL source line contains one or more control characters.
+   		inout [DATA_WIDTH-1:0]	data,
+|
+halcheck: *W,CTLCHR (./simulation/single_ram.v,9|0): HDL source line contains one or more control characters.
+   		input 					cs,
+|
+halcheck: *W,CTLCHR (./simulation/single_ram.v,10|0): HDL source line contains one or more control characters.
+   		input 					we,
+|
+halcheck: *W,CTLCHR (./simulation/single_ram.v,11|0): HDL source line contains one or more control characters.
+   		input 					oe
+|
+halcheck: *W,CTLCHR (./simulation/single_ram.v,12|0): HDL source line contains one or more control characters.
+  reg [DATA_WIDTH-1:0] 	tmp_data;
+|
+halcheck: *W,CTLCHR (./simulation/single_ram.v,15|0): HDL source line contains one or more control characters.
+  reg [DATA_WIDTH-1:0] 	mem [DEPTH:0];
+|
+halcheck: *W,CTLCHR (./simulation/single_ram.v,16|0): HDL source line contains one or more control characters.
+    	tmp_data <= mem[addr];
+|
+halcheck: *W,CTLCHR (./simulation/single_ram.v,25|0): HDL source line contains one or more control characters.
+   		inout [DATA_WIDTH-1:0]	data,
+|
+halcheck: *W,IOPNTA (./simulation/single_ram.v,9|0): Port 'data' is of type inout.
+  # (parameter ADDR_WIDTH = 4,
+|
+halcheck: *W,PRMVAL (./simulation/single_ram.v,2|0): Bit width not specified for parameter 'ADDR_WIDTH'.
+     parameter DATA_WIDTH = 32,
+|
+halcheck: *W,PRMVAL (./simulation/single_ram.v,3|0): Bit width not specified for parameter 'DATA_WIDTH'.
+     parameter DATA_WIDTH = 32,
+|
+halcheck: *W,PRMBSE (./simulation/single_ram.v,3|0): Base not specified for parameter 'DATA_WIDTH'.
+     parameter DEPTH = 16 
+|
+halcheck: *W,PRMVAL (./simulation/single_ram.v,4|0): Bit width not specified for parameter 'DEPTH'.
+     parameter DEPTH = 16 
+|
+halcheck: *W,PRMBSE (./simulation/single_ram.v,4|0): Base not specified for parameter 'DEPTH'.
+  always @ (posedge clk) begin
+|
+halcheck: *W,NOBLKN (./simulation/single_ram.v,18|0): Each block should be labeled with a meaningful name.
+    if (cs & we)
+|
+halcheck: *W,NBGEND (./simulation/single_ram.v,19|0): Missing begin/end statement in the 'if' block.
+    if (cs & we)
+|
+halcheck: *W,LOGAND (./simulation/single_ram.v,19|0): Bit-wise AND in a conditional expression. Logical AND may have been intended.
+  always @ (posedge clk) begin
+|
+halcheck: *W,NOBLKN (./simulation/single_ram.v,23|0): Each block should be labeled with a meaningful name.
+    if (cs & !we)
+|
+halcheck: *W,NBGEND (./simulation/single_ram.v,24|0): Missing begin/end statement in the 'if' block.
+    if (cs & !we)
+|
+halcheck: *W,LOGAND (./simulation/single_ram.v,24|0): Bit-wise AND in a conditional expression. Logical AND may have been intended.
+  assign data = cs & oe & !we ? tmp_data : 'hz;
+|
+halcheck: *W,LOGAND (./simulation/single_ram.v,28|0): Bit-wise AND in a conditional expression. Logical AND may have been intended.
+  assign data = cs & oe & !we ? tmp_data : 'hz;
+|
+halcheck: *W,SYNTXZ (./simulation/single_ram.v,28|0): Synthesizing 'x'/'z' values in module 'single_port_sync_ram'.
+  parameter DEPTH = 16;
+|
+halcheck: *W,USEPAR (./simulation/ram_tb.v,4|0): Parameter 'DEPTH' defined in module 'tb' is unused.
+  assign data = !oe ? tb_data : 'hz;
+|
+halcheck: *W,EXTENZ (./simulation/ram_tb.v,25|0): Extension of 'z' bits in a constant.
+  assign data = cs & oe & !we ? tmp_data : 'hz;
+|
+halcheck: *W,EXTENZ (./simulation/single_ram.v,28|0): Extension of 'z' bits in a constant.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 73.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64: 15.20.051-s(15.20.s051): (c) Copyright 1995 - 2018 Cadence Design Systems, Inc.
+cfe64 Build : Mon May  7 17:15:12 IST 2018 ldvopt246
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+  reg [DATA_WIDTH-1:0] 	mem [DEPTH:0];
+|
+halsynth: *W,VLGMEM (./simulation/single_ram.v,16|0): Module single_port_sync_ram has Verilog memories. For large memories, processing may take some time.
+      mem[addr] <= data;
+|
+halsynth: *W,IDXTSM (./simulation/single_ram.v,20|0): Variable index/range selection of 'mem' is too small to access its defined range completely.
+  always #10 clk = ~clk;
+|
+halsynth: *E,AWNDEL (./simulation/ram_tb.v,24|0): Always block with no event trigger at the start in module tb.
+  initial begin
+|
+halsynth: *W,INIUSP (./simulation/ram_tb.v,27|0): Module tb has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+halsynth: *W,COMBLP: In module tb, combinational loop detected for node clk.
+  always #10 clk = ~clk;
+|
+halsynth: (./simulation/ram_tb.v,24|0): Source HDL information for the error/warning mentioned above.
+  always #10 clk = ~clk;
+|
+halsynth: *W,IGNDLY (./simulation/ram_tb.v,24|0): Lumped delay in module 'tb' is ignored.
+  wire [DATA_WIDTH-1:0] data;
+|
+halsynth: *W,MULWIR (./simulation/ram_tb.v,11|0): Module 'tb' has wire 'data' multi-driven.
+halsynth: Total errors   = 1.
+halsynth: Total warnings = 6.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+    	tmp_data <= mem[addr];
+|
+halstruct: *W,IDXTSM (./simulation/single_ram.v,25|0): Variable index/range selection of 'tb.u0.mem' is too small to access its defined range completely.
+  reg clk;
+|
+halstruct: *E,CMBPAU (./simulation/ram_tb.v,6|0): Combinational loop detected through 'clk' in module/design-unit 'tb'.
+halstruct: (./simulation/ram_tb.v,24): tb.clk.
+  assign data = !oe ? tb_data : 'hz;
+|
+halstruct: *W,TSBINF (./simulation/ram_tb.v,25|0): Signal 'data' defined in module/design-unit 'tb', is inferred as a tri-state buffer.
+  assign data = !oe ? tb_data : 'hz;
+|
+halstruct: *W,SLNOTP (./simulation/ram_tb.v,25|0): Enable pin of the tristate buffer 'tb.data' is not directly controllable by primary input(s).
+module single_port_sync_ram 
+|
+halstruct: *W,TSMHOL (./simulation/single_ram.v,1|0): Tri-state module 'single_port_sync_ram' contains other logic.
+halstruct: (./simulation/single_ram.v,16): Additional logic used.
+module single_port_sync_ram 
+|
+halstruct: *W,SYNASN (./simulation/single_ram.v,1|0): The module/design-unit 'single_port_sync_ram' contains synchronous as well as asynchronous logic.
+halstruct: (./simulation/single_ram.v,28): One instance/occurence of asynchronous logic at 'tb.u0.data'.
+halstruct: (./simulation/single_ram.v,20): One instance/occurence of synchronous logic at 'tb.u0.mem[0]'.
+  single_port_sync_ram #(.DATA_WIDTH(DATA_WIDTH)) u0
+|
+halstruct: *E,UNCONI (./simulation/ram_tb.v,14|0): Input port 'addr' of entity/module 'single_port_sync_ram' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'tb.u0'.
+halstruct: (./simulation/ram_tb.v,14): 'addr[3:0]' mapped to actual expression 'addr' which is undriven.
+  single_port_sync_ram #(.DATA_WIDTH(DATA_WIDTH)) u0
+|
+halstruct: *E,UNCONI (./simulation/ram_tb.v,14|0): Input port 'cs' of entity/module 'single_port_sync_ram' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'tb.u0'.
+halstruct: (./simulation/ram_tb.v,14): 'cs' mapped to actual expression 'cs' which is undriven.
+  single_port_sync_ram #(.DATA_WIDTH(DATA_WIDTH)) u0
+|
+halstruct: *E,UNCONI (./simulation/ram_tb.v,14|0): Input port 'we' of entity/module 'single_port_sync_ram' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'tb.u0'.
+halstruct: (./simulation/ram_tb.v,14): 'we' mapped to actual expression 'we' which is undriven.
+  single_port_sync_ram #(.DATA_WIDTH(DATA_WIDTH)) u0
+|
+halstruct: *E,UNCONI (./simulation/ram_tb.v,14|0): Input port 'oe' of entity/module 'single_port_sync_ram' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'tb.u0'.
+halstruct: (./simulation/ram_tb.v,14): 'oe' mapped to actual expression 'oe' which is undriven.
+  assign data = cs & oe & !we ? tmp_data : 'hz;
+|
+halstruct: *W,TSBINF (./simulation/single_ram.v,28|0): Signal 'data' defined in module/design-unit 'single_port_sync_ram', is inferred as a tri-state buffer.
+  assign data = cs & oe & !we ? tmp_data : 'hz;
+|
+halstruct: *W,SLNOTP (./simulation/single_ram.v,28|0): Enable pin of the tristate buffer 'tb.u0.data' is not directly controllable by primary input(s).
+  assign data = cs & oe & !we ? tmp_data : 'hz;
+|
+halstruct: *W,EXLTRS (./simulation/single_ram.v,28|0): Expression used in the conditional logic of tristate buffer 'data'.
+      mem[addr] <= data;
+|
+halstruct: *W,FFWNSR (./simulation/single_ram.v,20|0): Flip-flop 'mem[0]' does not have any set or reset.
+  always @ (posedge clk) begin
+|
+halstruct: *W,OLDALW (./simulation/single_ram.v,18|0): Old coding style for always block is found in module 'single_port_sync_ram', use 'always_ff' instead.
+  reg clk;
+|
+halstruct: *N,CLKINF (./simulation/ram_tb.v,6|0): Signal 'tb.clk' was inferred as clock.
+halstruct: (./simulation/ram_tb.v,6): Clock source is signal 'tb.clk'.
+halstruct: (./simulation/single_ram.v,20): Drives the flip-flop 'tb.u0.mem[0]'.
+      mem[addr] <= data;
+|
+halstruct: *E,CBPAHI (./simulation/single_ram.v,20|0): Combinatorial path crossing multiple units drives 'tb.u0.mem[0]'.
+halstruct: (./simulation/single_ram.v,20): in instance 'tb.u0', combinatorial function of input 'data' drives 'mem[0]'.
+halstruct: (./simulation/ram_tb.v,14): in instance 'tb', drives input 'data' of instance 'u0'.
+halstruct: (./simulation/ram_tb.v,25): in instance 'tb', drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', 'data' drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', combinatorial function drives 'data'.
+      mem[addr] <= data;
+|
+halstruct: *W,CLKNPI (./simulation/single_ram.v,20|0): Flip-flop 'tb.u0.mem[0]' has clock 'clk' which is not derived from primary input.
+halstruct: (./simulation/ram_tb.v,24): Derived from local variable 'clk'.
+      mem[addr] <= data;
+|
+halstruct: *W,NEGCLK (./simulation/single_ram.v,20|0): Clock signal 'tb.clk' of flip-flop 'tb.u0.mem[0]' is derived from an inverter.
+      mem[addr] <= data;
+|
+halstruct: *W,FFWNSR (./simulation/single_ram.v,20|0): Flip-flop 'mem[1]' does not have any set or reset.
+      mem[addr] <= data;
+|
+halstruct: *E,CBPAHI (./simulation/single_ram.v,20|0): Combinatorial path crossing multiple units drives 'tb.u0.mem[1]'.
+halstruct: (./simulation/single_ram.v,20): in instance 'tb.u0', combinatorial function of input 'data' drives 'mem[1]'.
+halstruct: (./simulation/ram_tb.v,14): in instance 'tb', drives input 'data' of instance 'u0'.
+halstruct: (./simulation/ram_tb.v,25): in instance 'tb', drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', 'data' drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', combinatorial function drives 'data'.
+      mem[addr] <= data;
+|
+halstruct: *W,NEGCLK (./simulation/single_ram.v,20|0): Clock signal 'tb.clk' of flip-flop 'tb.u0.mem[1]' is derived from an inverter.
+      mem[addr] <= data;
+|
+halstruct: *W,FFWNSR (./simulation/single_ram.v,20|0): Flip-flop 'mem[2]' does not have any set or reset.
+      mem[addr] <= data;
+|
+halstruct: *E,CBPAHI (./simulation/single_ram.v,20|0): Combinatorial path crossing multiple units drives 'tb.u0.mem[2]'.
+halstruct: (./simulation/single_ram.v,20): in instance 'tb.u0', combinatorial function of input 'data' drives 'mem[2]'.
+halstruct: (./simulation/ram_tb.v,14): in instance 'tb', drives input 'data' of instance 'u0'.
+halstruct: (./simulation/ram_tb.v,25): in instance 'tb', drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', 'data' drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', combinatorial function drives 'data'.
+      mem[addr] <= data;
+|
+halstruct: *W,NEGCLK (./simulation/single_ram.v,20|0): Clock signal 'tb.clk' of flip-flop 'tb.u0.mem[2]' is derived from an inverter.
+      mem[addr] <= data;
+|
+halstruct: *W,FFWNSR (./simulation/single_ram.v,20|0): Flip-flop 'mem[3]' does not have any set or reset.
+      mem[addr] <= data;
+|
+halstruct: *E,CBPAHI (./simulation/single_ram.v,20|0): Combinatorial path crossing multiple units drives 'tb.u0.mem[3]'.
+halstruct: (./simulation/single_ram.v,20): in instance 'tb.u0', combinatorial function of input 'data' drives 'mem[3]'.
+halstruct: (./simulation/ram_tb.v,14): in instance 'tb', drives input 'data' of instance 'u0'.
+halstruct: (./simulation/ram_tb.v,25): in instance 'tb', drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', 'data' drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', combinatorial function drives 'data'.
+      mem[addr] <= data;
+|
+halstruct: *W,NEGCLK (./simulation/single_ram.v,20|0): Clock signal 'tb.clk' of flip-flop 'tb.u0.mem[3]' is derived from an inverter.
+      mem[addr] <= data;
+|
+halstruct: *W,FFWNSR (./simulation/single_ram.v,20|0): Flip-flop 'mem[4]' does not have any set or reset.
+      mem[addr] <= data;
+|
+halstruct: *E,CBPAHI (./simulation/single_ram.v,20|0): Combinatorial path crossing multiple units drives 'tb.u0.mem[4]'.
+halstruct: (./simulation/single_ram.v,20): in instance 'tb.u0', combinatorial function of input 'data' drives 'mem[4]'.
+halstruct: (./simulation/ram_tb.v,14): in instance 'tb', drives input 'data' of instance 'u0'.
+halstruct: (./simulation/ram_tb.v,25): in instance 'tb', drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', 'data' drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', combinatorial function drives 'data'.
+      mem[addr] <= data;
+|
+halstruct: *W,NEGCLK (./simulation/single_ram.v,20|0): Clock signal 'tb.clk' of flip-flop 'tb.u0.mem[4]' is derived from an inverter.
+      mem[addr] <= data;
+|
+halstruct: *W,FFWNSR (./simulation/single_ram.v,20|0): Flip-flop 'mem[5]' does not have any set or reset.
+      mem[addr] <= data;
+|
+halstruct: *E,CBPAHI (./simulation/single_ram.v,20|0): Combinatorial path crossing multiple units drives 'tb.u0.mem[5]'.
+halstruct: (./simulation/single_ram.v,20): in instance 'tb.u0', combinatorial function of input 'data' drives 'mem[5]'.
+halstruct: (./simulation/ram_tb.v,14): in instance 'tb', drives input 'data' of instance 'u0'.
+halstruct: (./simulation/ram_tb.v,25): in instance 'tb', drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', 'data' drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', combinatorial function drives 'data'.
+      mem[addr] <= data;
+|
+halstruct: *W,NEGCLK (./simulation/single_ram.v,20|0): Clock signal 'tb.clk' of flip-flop 'tb.u0.mem[5]' is derived from an inverter.
+      mem[addr] <= data;
+|
+halstruct: *W,FFWNSR (./simulation/single_ram.v,20|0): Flip-flop 'mem[6]' does not have any set or reset.
+      mem[addr] <= data;
+|
+halstruct: *E,CBPAHI (./simulation/single_ram.v,20|0): Combinatorial path crossing multiple units drives 'tb.u0.mem[6]'.
+halstruct: (./simulation/single_ram.v,20): in instance 'tb.u0', combinatorial function of input 'data' drives 'mem[6]'.
+halstruct: (./simulation/ram_tb.v,14): in instance 'tb', drives input 'data' of instance 'u0'.
+halstruct: (./simulation/ram_tb.v,25): in instance 'tb', drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', 'data' drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', combinatorial function drives 'data'.
+      mem[addr] <= data;
+|
+halstruct: *W,NEGCLK (./simulation/single_ram.v,20|0): Clock signal 'tb.clk' of flip-flop 'tb.u0.mem[6]' is derived from an inverter.
+      mem[addr] <= data;
+|
+halstruct: *W,FFWNSR (./simulation/single_ram.v,20|0): Flip-flop 'mem[7]' does not have any set or reset.
+      mem[addr] <= data;
+|
+halstruct: *E,CBPAHI (./simulation/single_ram.v,20|0): Combinatorial path crossing multiple units drives 'tb.u0.mem[7]'.
+halstruct: (./simulation/single_ram.v,20): in instance 'tb.u0', combinatorial function of input 'data' drives 'mem[7]'.
+halstruct: (./simulation/ram_tb.v,14): in instance 'tb', drives input 'data' of instance 'u0'.
+halstruct: (./simulation/ram_tb.v,25): in instance 'tb', drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', 'data' drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', combinatorial function drives 'data'.
+      mem[addr] <= data;
+|
+halstruct: *W,NEGCLK (./simulation/single_ram.v,20|0): Clock signal 'tb.clk' of flip-flop 'tb.u0.mem[7]' is derived from an inverter.
+      mem[addr] <= data;
+|
+halstruct: *W,FFWNSR (./simulation/single_ram.v,20|0): Flip-flop 'mem[8]' does not have any set or reset.
+      mem[addr] <= data;
+|
+halstruct: *E,CBPAHI (./simulation/single_ram.v,20|0): Combinatorial path crossing multiple units drives 'tb.u0.mem[8]'.
+halstruct: (./simulation/single_ram.v,20): in instance 'tb.u0', combinatorial function of input 'data' drives 'mem[8]'.
+halstruct: (./simulation/ram_tb.v,14): in instance 'tb', drives input 'data' of instance 'u0'.
+halstruct: (./simulation/ram_tb.v,25): in instance 'tb', drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', 'data' drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', combinatorial function drives 'data'.
+      mem[addr] <= data;
+|
+halstruct: *W,NEGCLK (./simulation/single_ram.v,20|0): Clock signal 'tb.clk' of flip-flop 'tb.u0.mem[8]' is derived from an inverter.
+      mem[addr] <= data;
+|
+halstruct: *W,FFWNSR (./simulation/single_ram.v,20|0): Flip-flop 'mem[9]' does not have any set or reset.
+      mem[addr] <= data;
+|
+halstruct: *E,CBPAHI (./simulation/single_ram.v,20|0): Combinatorial path crossing multiple units drives 'tb.u0.mem[9]'.
+halstruct: (./simulation/single_ram.v,20): in instance 'tb.u0', combinatorial function of input 'data' drives 'mem[9]'.
+halstruct: (./simulation/ram_tb.v,14): in instance 'tb', drives input 'data' of instance 'u0'.
+halstruct: (./simulation/ram_tb.v,25): in instance 'tb', drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', 'data' drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', combinatorial function drives 'data'.
+      mem[addr] <= data;
+|
+halstruct: *W,NEGCLK (./simulation/single_ram.v,20|0): Clock signal 'tb.clk' of flip-flop 'tb.u0.mem[9]' is derived from an inverter.
+      mem[addr] <= data;
+|
+halstruct: *W,FFWNSR (./simulation/single_ram.v,20|0): Flip-flop 'mem[10]' does not have any set or reset.
+      mem[addr] <= data;
+|
+halstruct: *E,CBPAHI (./simulation/single_ram.v,20|0): Combinatorial path crossing multiple units drives 'tb.u0.mem[10]'.
+halstruct: (./simulation/single_ram.v,20): in instance 'tb.u0', combinatorial function of input 'data' drives 'mem[10]'.
+halstruct: (./simulation/ram_tb.v,14): in instance 'tb', drives input 'data' of instance 'u0'.
+halstruct: (./simulation/ram_tb.v,25): in instance 'tb', drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', 'data' drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', combinatorial function drives 'data'.
+      mem[addr] <= data;
+|
+halstruct: *W,NEGCLK (./simulation/single_ram.v,20|0): Clock signal 'tb.clk' of flip-flop 'tb.u0.mem[10]' is derived from an inverter.
+      mem[addr] <= data;
+|
+halstruct: *W,FFWNSR (./simulation/single_ram.v,20|0): Flip-flop 'mem[11]' does not have any set or reset.
+      mem[addr] <= data;
+|
+halstruct: *E,CBPAHI (./simulation/single_ram.v,20|0): Combinatorial path crossing multiple units drives 'tb.u0.mem[11]'.
+halstruct: (./simulation/single_ram.v,20): in instance 'tb.u0', combinatorial function of input 'data' drives 'mem[11]'.
+halstruct: (./simulation/ram_tb.v,14): in instance 'tb', drives input 'data' of instance 'u0'.
+halstruct: (./simulation/ram_tb.v,25): in instance 'tb', drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', 'data' drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', combinatorial function drives 'data'.
+      mem[addr] <= data;
+|
+halstruct: *W,NEGCLK (./simulation/single_ram.v,20|0): Clock signal 'tb.clk' of flip-flop 'tb.u0.mem[11]' is derived from an inverter.
+      mem[addr] <= data;
+|
+halstruct: *W,FFWNSR (./simulation/single_ram.v,20|0): Flip-flop 'mem[12]' does not have any set or reset.
+      mem[addr] <= data;
+|
+halstruct: *E,CBPAHI (./simulation/single_ram.v,20|0): Combinatorial path crossing multiple units drives 'tb.u0.mem[12]'.
+halstruct: (./simulation/single_ram.v,20): in instance 'tb.u0', combinatorial function of input 'data' drives 'mem[12]'.
+halstruct: (./simulation/ram_tb.v,14): in instance 'tb', drives input 'data' of instance 'u0'.
+halstruct: (./simulation/ram_tb.v,25): in instance 'tb', drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', 'data' drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', combinatorial function drives 'data'.
+      mem[addr] <= data;
+|
+halstruct: *W,NEGCLK (./simulation/single_ram.v,20|0): Clock signal 'tb.clk' of flip-flop 'tb.u0.mem[12]' is derived from an inverter.
+      mem[addr] <= data;
+|
+halstruct: *W,FFWNSR (./simulation/single_ram.v,20|0): Flip-flop 'mem[13]' does not have any set or reset.
+      mem[addr] <= data;
+|
+halstruct: *E,CBPAHI (./simulation/single_ram.v,20|0): Combinatorial path crossing multiple units drives 'tb.u0.mem[13]'.
+halstruct: (./simulation/single_ram.v,20): in instance 'tb.u0', combinatorial function of input 'data' drives 'mem[13]'.
+halstruct: (./simulation/ram_tb.v,14): in instance 'tb', drives input 'data' of instance 'u0'.
+halstruct: (./simulation/ram_tb.v,25): in instance 'tb', drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', 'data' drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', combinatorial function drives 'data'.
+      mem[addr] <= data;
+|
+halstruct: *W,NEGCLK (./simulation/single_ram.v,20|0): Clock signal 'tb.clk' of flip-flop 'tb.u0.mem[13]' is derived from an inverter.
+      mem[addr] <= data;
+|
+halstruct: *W,FFWNSR (./simulation/single_ram.v,20|0): Flip-flop 'mem[14]' does not have any set or reset.
+      mem[addr] <= data;
+|
+halstruct: *E,CBPAHI (./simulation/single_ram.v,20|0): Combinatorial path crossing multiple units drives 'tb.u0.mem[14]'.
+halstruct: (./simulation/single_ram.v,20): in instance 'tb.u0', combinatorial function of input 'data' drives 'mem[14]'.
+halstruct: (./simulation/ram_tb.v,14): in instance 'tb', drives input 'data' of instance 'u0'.
+halstruct: (./simulation/ram_tb.v,25): in instance 'tb', drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', 'data' drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', combinatorial function drives 'data'.
+      mem[addr] <= data;
+|
+halstruct: *W,NEGCLK (./simulation/single_ram.v,20|0): Clock signal 'tb.clk' of flip-flop 'tb.u0.mem[14]' is derived from an inverter.
+      mem[addr] <= data;
+|
+halstruct: *W,FFWNSR (./simulation/single_ram.v,20|0): Flip-flop 'mem[15]' does not have any set or reset.
+      mem[addr] <= data;
+|
+halstruct: *E,CBPAHI (./simulation/single_ram.v,20|0): Combinatorial path crossing multiple units drives 'tb.u0.mem[15]'.
+halstruct: (./simulation/single_ram.v,20): in instance 'tb.u0', combinatorial function of input 'data' drives 'mem[15]'.
+halstruct: (./simulation/ram_tb.v,14): in instance 'tb', drives input 'data' of instance 'u0'.
+halstruct: (./simulation/ram_tb.v,25): in instance 'tb', drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', 'data' drives 'data'.
+halstruct: (./simulation/single_ram.v,28): in instance 'tb.u0', combinatorial function drives 'data'.
+      mem[addr] <= data;
+|
+halstruct: *W,NEGCLK (./simulation/single_ram.v,20|0): Clock signal 'tb.clk' of flip-flop 'tb.u0.mem[15]' is derived from an inverter.
+  reg [DATA_WIDTH-1:0] 	mem [DEPTH:0];
+|
+halstruct: *W,FFWNSR (./simulation/single_ram.v,16|0): Flip-flop 'mem[16]' does not have any set or reset.
+  reg [DATA_WIDTH-1:0] 	mem [DEPTH:0];
+|
+halstruct: *W,NEGCLK (./simulation/single_ram.v,16|0): Clock signal 'tb.clk' of flip-flop 'tb.u0.mem[16]' is derived from an inverter.
+    	tmp_data <= mem[addr];
+|
+halstruct: *W,FFWNSR (./simulation/single_ram.v,25|0): Flip-flop 'tmp_data' does not have any set or reset.
+  always @ (posedge clk) begin
+|
+halstruct: *W,OLDALW (./simulation/single_ram.v,23|0): Old coding style for always block is found in module 'single_port_sync_ram', use 'always_ff' instead.
+    	tmp_data <= mem[addr];
+|
+halstruct: *W,NEGCLK (./simulation/single_ram.v,25|0): Clock signal 'tb.clk' of flip-flop 'tb.u0.tmp_data' is derived from an inverter.
+module tb;
+|
+halstruct: *W,TSMHOL (./simulation/ram_tb.v,1|0): Tri-state module 'tb' contains other logic.
+halstruct: (./simulation/ram_tb.v,24): Additional logic used.
+module tb;
+|
+halstruct: *W,ATLGLC (./simulation/ram_tb.v,1|0): Glue logic inferred in top-level module/design-unit 'tb'.
+halstruct: (./simulation/ram_tb.v,24): HDL-statement inferred as glue logic.
+halstruct: (./simulation/ram_tb.v,25): HDL-statement inferred as glue logic.
+  always #10 clk = ~clk;
+|
+halstruct: *W,OLDALW (./simulation/ram_tb.v,24|0): Old coding style for always block is found in module 'tb', use 'always_comb' instead.
+module tb;
+|
+halstruct: *N,NUMDFF (./simulation/ram_tb.v,1|0): Number of single-bit D flip-flops present in the hierarchy is 576.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 21.
+halstruct: Total warnings = 50.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Errors   : (22)
+  AWNDEL (1)      CBPAHI (16)     CMBPAU (1)      UNCONI (4)     
+
+ Warnings : (129)
+  ATLGLC (1)      BADSYS (2)      CLKNPI (1)      COMBLP (1)     
+  CTLCHR (15)     DIFFMN (2)      EVTRIG (1)      EXLTRS (1)     
+  EXTEND (1)      EXTENZ (2)      FFWNSR (18)     IDXTSM (2)     
+  IGNDLY (1)      IMPDTC (7)      INIUSP (1)      INTTOB (2)     
+  IOPNTA (1)      LOGAND (3)      MAXLEN (1)      MULWIR (1)     
+  NBGEND (3)      NEEDIO (1)      NEGCLK (18)     NOBLKN (3)     
+  OLDALW (3)      PRMBSE (4)      PRMVAL (6)      RDBFAS (4)     
+  REVROP (4)      SEPLIN (4)      SLNOTP (2)      SYNASN (1)     
+  SYNTXZ (2)      TRUNCZ (2)      TSBINF (2)      TSMHOL (2)     
+  UEASTR (2)      USEPAR (1)      VLGMEM (1)     
+
+ Notes    : (6)
+  CLKINF (1)      IDLENG (3)      NUMDFF (1)      PRTCNT (1)     
+
+Analysis complete.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib /home/vlsi5/praveen_design/single_port_RAM/cds.lib -sortby severity -sortby category -sortby tag hal.log
+
