@@ -1,0 +1,18 @@
+VERSION {1.0}
+PTDEF {instance} {pin} {cell} {edge} {clock_edge} {clock} {phase}
+BANNER
+  {Module} {single_port_sync_ram}
+  {Timing} {LATE}
+  {Slew Propagation} {WORST}
+  {PVT Mode} {max}
+  {Tree Type} {balanced_tree}
+  {Process} {1.0}
+  {Voltage} {1.98}
+  {Temperature} {-40.0}
+  {time unit} {1.000 ns}
+  {capacitance unit} {1.000 pF}
+  {resistance unit} {1.000 kOhm}
+  {TOOL} {Genus(TM) Synthesis Solution v17.22-s017_1}
+  {DATE} {Wed Dec 13 18:29:04 IST 2023}
+END_BANNER
+

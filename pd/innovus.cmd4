@@ -1,0 +1,336 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue Dec 19 11:33:46 2023                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v17.12-s095_1 (64bit) 11/09/2017 12:10 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 17.12-s095_1 NR171102-1913/17_12-UB (database version 2.30, 405.7.1) {superthreading v1.44}
+#@(#)CDS: AAE 17.12-s040 (64bit) 11/09/2017 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 17.12-s036_1 () Nov  2 2017 09:33:40 ( )
+#@(#)CDS: SYNTECH 17.12-s012_1 () Oct 31 2017 04:30:11 ( )
+#@(#)CDS: CPE v17.12-s076
+#@(#)CDS: IQRC/TQRC 16.1.1-s220 (64bit) Fri Aug  4 09:53:48 PDT 2017 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getDrawView
+loadWorkspace -name Physical
+win
+set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+set conf_qxconf_file NULL
+set conf_qxlib_file NULL
+set defHierChar /
+set distributed_client_message_echo 1
+set distributed_mmmc_disable_reports_auto_redirection 0
+set eco_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+set enc_enable_print_mode_command_reset_options 1
+set init_gnd_net {VSS VSSO 1VSS 1VSSO 2VSS 2VSSO 3VSS 3VSSO}
+set init_io_file innovusinputfiles/padframe_ram1.io
+set init_lef_file {../../../pdk/scl_pdk/stdlib/fs120/tech_data/lef/tsl180l4.lef ../../../pdk/scl_pdk/stdlib/fs120/lef/tsl18fs120_scl.lef ../../../pdk/scl_pdk/iolib/cio250/cds/lef/tsl18cio250_4lm.lef}
+set init_mmmc_file innovusinputfiles/viewDefinition.tcl
+set init_pwr_net {VDD VDDO 1VDD 1VDDO 2VDD 2VDDO 3VDD 3VDDO}
+set init_verilog innovusinputfiles/ram_netlist.v
+set latch_time_borrow_mode max_borrow
+set pegDefaultResScaleFactor 1
+set pegDetailResScaleFactor 1
+set report_inactive_arcs_format {from to when arc_type sense reason}
+set soft_stack_size_limit 15
+set tso_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+init_design
+getIoFlowFlag
+selectInst cornercell2
+deselectAll
+setIoFlowFlag 0
+floorPlan -site CoreSite -d 1710.0 1710.0 0.32 0.32 0.0 2.48
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site CoreSite -d 1710.24 1710.24 0.56 0.56 0.0 2.24
+uiSetTool select
+getIoFlowFlag
+fit
+uiSetTool ruler
+uiSetTool ruler
+fit
+uiSetTool select
+uiSetTool select
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site CoreSite -b 0.0 0.0 1710.24 1710.24 250.0 250.0 1460.24 1460.24 300.56 300.56 1410.24 1410.0
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site CoreSite -b 0.0 0.0 1710.24 1710.24 249.76 249.76 1460.48 1460.48 300.72 300.72 1410.08 1410.08
+uiSetTool select
+getIoFlowFlag
+fit
+uiSetTool ruler
+uiSetTool ruler
+fit
+addIoFiller -cell pfeed02000 -prefix FILLER -side n
+addIoFiller -cell pfeed02000 -prefix FILLER -side e
+addIoFiller -cell pfeed02000 -prefix FILLER -side w
+addIoFiller -cell pfeed02000 -prefix FILLER -side s
+fit
+globalNetConnect VDD -type pgpin -pin VDD -override -verbose -netlistOverride
+globalNetConnect 1VDD -type pgpin -pin VDD -override -verbose -netlistOverride
+globalNetConnect 2VDD -type pgpin -pin VDD -override -verbose -netlistOverride
+globalNetConnect 3VDD -type pgpin -pin VDD -override -verbose -netlistOverride
+globalNetConnect 3VSS -type pgpin -pin VSS -override -verbose -netlistOverride
+globalNetConnect 2VSS -type pgpin -pin VSS -override -verbose -netlistOverride
+globalNetConnect 1VSS -type pgpin -pin VSS -override -verbose -netlistOverride
+globalNetConnect VSS -type pgpin -pin VSS -override -verbose -netlistOverride
+globalNetConnect VDDO - type pgpin -pin VDDO -override -verbose -netlistOverride
+globalNetConnect VDDO -type pgpin -pin VDDO -override -verbose -netlistOverride
+globalNetConnect 1VDDO -type pgpin -pin VDDO -override -verbose -netlistOverride
+globalNetConnect 2VDDO -type pgpin -pin VDDO -override -verbose -netlistOverride
+globalNetConnect 3VDDO -type pgpin -pin VDDO -override -verbose -netlistOverride
+globalNetConnect 3VSSO -type pgpin -pin VSSO -override -verbose -netlistOverride
+globalNetConnect 2VSSO -type pgpin -pin VSSO -override -verbose -netlistOverride
+globalNetConnect 1VSSO -type pgpin -pin VSSO -override -verbose -netlistOverride
+globalNetConnect VSSO -type pgpin -pin VSSO -override -verbose -netlistOverride
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site CoreSite -b 0.0 0.0 1710.24 1710.24 249.76 249.76 1460.48 1460.48 300.72 300.72 1400.08 1400.08
+uiSetTool select
+getIoFlowFlag
+fit
+floorPlan -site CoreSite -noSnapToGrid -d 1710 1710 20 20 20 20
+selectInst FILLER_W_27
+deleteIoFiller -cell pfeed0200 -prefix FILLER -side n
+fit
+deselectAll
+selectInst FILLER_N_126
+deselectAll
+selectInst FILLER_N_85
+deselectAll
+selectInst FILLER_E_86
+deleteSelectedFromFPlan
+deleteSelectedFromFPlan
+deselectAll
+deleteSelectedFromFPlan
+selectInst FILLER_E_131
+deleteSelectedFromFPlan
+deselectAll
+deleteSelectedFromFPlan
+deleteSelectedFromFPlan
+selectInst FILLER_E_78
+deleteSelectedFromFPlan
+deselectAll
+deleteSelectedFromFPlan
+selectInst FILLER_E_79
+deleteSelectedFromFPlan
+deleteSelectedFromFPlan
+deselectAll
+selectInst FILLER_E_82
+selectInst FILLER_E_90
+selectInst FILLER_E_140
+selectInst FILLER_E_118
+selectInst FILLER_E_19
+selectInst FILLER_E_32
+gui_select -append -rect {1593.619 355.478 1593.619 348.442}
+selectInst FILLER_E_60
+selectInst FILLER_E_139
+selectInst FILLER_E_144
+selectInst FILLER_E_146
+selectInst FILLER_E_147
+deselectAll
+deleteIoFiller -cell pfeed02000 -prefix FILLER -side n
+fit
+deleteIoFiller -cell pfeed02000 -prefix FILLER -side s
+deleteIoFiller -cell pfeed02000 -prefix FILLER -side w
+deleteIoFiller -cell pfeed02000 -prefix FILLER -side w
+selectInst Addr3
+deleteIoFiller -cell pfeed02000 -prefix FILLER -side w
+deleteIoFiller -cell pfeed02000 -prefix FILLER -side w
+deleteIoFiller -cell pfeed02000 -prefix FILLER -side w
+deleteIoFiller -cell pfeed02000 -prefix FILLER -side e
+deleteIoFiller -cell pfeed02000 -prefix FILLER -side e
+floorPlan -site CoreSite -noSnapToGrid -d 1710 1710 20 20 20 20
+deselectAll
+addIoFiller -cell pfeed02000 -prefix FILLER -side n
+addIoFiller -cell pfeed02000 -prefix FILLER -side n
+addIoFiller -cell pfeed02000 -prefix FILLER -side s
+addIoFiller -cell pfeed02000 -prefix FILLER -side w
+addIoFiller -cell pfeed02000 -prefix FILLER -side e
+addIoFiller -cell pfeed02000 -prefix FILLER -side e
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site CoreSite -b 0.0 0.0 1710.0 1710.0 250.0 250.0 1460.0 1460.0 270.0 270.0 1410.0 1410.0
+uiSetTool select
+getIoFlowFlag
+fit
+undo
+undo
+undo
+undo
+deleteIoFiller -cell pfeed02000 -prefix FILLER -side e
+deleteIoFiller -cell pfeed02000 -prefix FILLER -side w
+deleteIoFiller -cell pfeed02000 -prefix FILLER -side s
+deleteIoFiller -cell pfeed02000 -prefix FILLER -side n
+deleteIoFiller -cell pfeed02000 -prefix FILLER -side n
+floorPlan -site CoreSite -noSnapToGrid -d 1710 1710 20 20 20 20
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site CoreSite -b 0.0 0.0 1710.0 1710.0 250.0 250.0 1460.0 1460.0 320.0 320.0 1390.0 1390.0
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site CoreSite -b 0.0 0.0 1710.24 1710.24 249.76 249.76 1459.92 1459.92 319.76 319.76 1389.92 1389.92
+uiSetTool select
+getIoFlowFlag
+fit
+addRing -skip_via_on_wire_shape Noshape -exclude_selected 1 -skip_via_on_pin Standardcell -center 1 -stacked_via_top_layer TOP_M -type core_rings -jog_distance 0.56 -threshold 0.56 -nets {VDD VSS} -follow core -stacked_via_bottom_layer M1 -layer {bottom M3 top M3 right TOP_M left TOP_M} -width 4 -spacing 1 -offset 2
+addRing -skip_via_on_wire_shape Noshape -exclude_selected 1 -skip_via_on_pin Standardcell -center 1 -stacked_via_top_layer TOP_M -type core_rings -jog_distance 0.56 -threshold 0.56 -nets {1VDD 1VSS} -follow core -stacked_via_bottom_layer M1 -layer {bottom M3 top M3 right TOP_M left TOP_M} -width 4 -spacing 1 -offset 2
+selectWire 285.3800 285.3800 289.3800 1424.3000 4 VDD
+deselectAll
+selectWire 280.3800 280.3800 284.3800 1429.3000 4 VSS
+deselectAll
+selectWire 1420.5800 285.3800 1424.5800 1424.3000 4 VDD
+deselectAll
+selectWire 285.3800 285.3800 1424.5800 289.3800 3 VDD
+addRing -skip_via_on_wire_shape Noshape -exclude_selected 1 -skip_via_on_pin Standardcell -center 1 -stacked_via_top_layer TOP_M -type core_rings -jog_distance 0.56 -threshold 0.56 -nets {2VDD 2VSS} -follow core -stacked_via_bottom_layer M1 -layer {bottom M3 top M3 right TOP_M left TOP_M} -width 4 -spacing 1 -offset 2
+deselectAll
+pan 92.405 -98.339
+pan 351.067 5.652
+pan 321.146 -15.625
+pan -14.295 151.597
+fit
+fit
+pan 65.330 363.985
+pan -509.959 -335.499
+pan 23.713 -185.210
+pan 525.326 854.013
+fit
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {1VDD 1VSS 2VDD 2VSS 3VDD 3VSS } -type core_rings -follow core -layer {top M3 bottom M3 left TOP_M right TOP_M} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+pan -31.938 -286.361
+pan -146.405 724.704
+fit
+sroute -connect {blockPin corePin padPin padRing floatingStripe secondaryPowerPin} -layerChangeRange {M1 TOP_M} -blockPinTarget nearestTarget -padPinPortConnect {allPort oneGeom} -padPinTarget nearestTarget -corePinTarget firstAfterRowEnd -floatingStripeTarget {blockring ring stripe padring ringpin blockpin followpin} -allowjogging 1 -crossoverViaLayerRange {M1 TOP_M} -nets {VDD VSS} -allowLayerChange 1 -blockPin useLef -targetViaLayerRange {M1 TOP_M}
+sroute -connect {blockPin corePin padPin padRing floatingStripe secondaryPowerPin} -layerChangeRange {M1 TOP_M} -blockPinTarget nearestTarget -padPinPortConnect {allPort oneGeom} -padPinTarget nearestTarget -corePinTarget firstAfterRowEnd -floatingStripeTarget {blockring ring stripe padring ringpin blockpin followpin} -allowjogging 1 -crossoverViaLayerRange {M1 TOP_M} -nets {1VDD 1VSS} -allowLayerChange 1 -blockPin useLef -targetViaLayerRange {M1 TOP_M}
+fit
+pan 64.593 12.918
+pan 310.428 -113.939
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+pan 18.585 -322.700
+pan -178.897 141.131
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -inst {} -override -verbose
+globalNetConnect 1VDD -type pgpin -pin VDD -inst {} -override -verbose
+globalNetConnect 2VDD -type pgpin -pin VDD -inst {} -override -verbose
+globalNetConnect 3VDD -type pgpin -pin VDD -inst {} -override -verbose
+globalNetConnect 3VSS -type pgpin -pin VSS -inst {} -override -verbose
+globalNetConnect 2VSS -type pgpin -pin VSS -inst {} -override -verbose
+globalNetConnect 1VSS -type pgpin -pin VSS -inst {} -override -verbose
+globalNetConnect VSS -type pgpin -pin VSS -inst {} -override -verbose
+globalNetConnect VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+globalNetConnect 1VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+globalNetConnect 2VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+globalNetConnect 3VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+globalNetConnect 3VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+globalNetConnect 2VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+globalNetConnect 1VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+globalNetConnect VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -inst {} -override -verbose
+globalNetConnect 1VDD -type pgpin -pin VDD -inst {} -override -verbose
+globalNetConnect 2VDD -type pgpin -pin VDD -inst {} -override -verbose
+globalNetConnect 3VDD -type pgpin -pin VDD -inst {} -override -verbose
+globalNetConnect 3VSS -type pgpin -pin VSS -inst {} -override -verbose
+globalNetConnect 2VSS -type pgpin -pin VSS -inst {} -override -verbose
+globalNetConnect 1VSS -type pgpin -pin VSS -inst {} -override -verbose
+globalNetConnect VSS -type pgpin -pin VSS -inst {} -override -verbose
+globalNetConnect VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+globalNetConnect 1VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+globalNetConnect 2VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+globalNetConnect 3VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+globalNetConnect 3VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+globalNetConnect 2VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+globalNetConnect 1VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+globalNetConnect VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+globalNetConnect VDD -type pgpin -pin {} -inst VDD -module {} -override -verbose
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -inst {} -override -verbose
+globalNetConnect 1VDD -type pgpin -pin VDD -inst {} -override -verbose
+globalNetConnect 2VDD -type pgpin -pin VDD -inst {} -override -verbose
+globalNetConnect 3VDD -type pgpin -pin VDD -inst {} -override -verbose
+globalNetConnect 3VSS -type pgpin -pin VSS -inst {} -override -verbose
+globalNetConnect 2VSS -type pgpin -pin VSS -inst {} -override -verbose
+globalNetConnect 1VSS -type pgpin -pin VSS -inst {} -override -verbose
+globalNetConnect VSS -type pgpin -pin VSS -inst {} -override -verbose
+globalNetConnect VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+globalNetConnect 1VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+globalNetConnect 2VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+globalNetConnect 3VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+globalNetConnect 3VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+globalNetConnect 2VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+globalNetConnect 1VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+globalNetConnect VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+globalNetConnect VDD -type pgpin -pin {} -inst VDD -module {} -override -verbose
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -inst {} -override -verbose
+globalNetConnect 1VDD -type pgpin -pin VDD -inst {} -override -verbose
+globalNetConnect 2VDD -type pgpin -pin VDD -inst {} -override -verbose
+globalNetConnect 3VDD -type pgpin -pin VDD -inst {} -override -verbose
+globalNetConnect 3VSS -type pgpin -pin VSS -inst {} -override -verbose
+globalNetConnect 2VSS -type pgpin -pin VSS -inst {} -override -verbose
+globalNetConnect 1VSS -type pgpin -pin VSS -inst {} -override -verbose
+globalNetConnect VSS -type pgpin -pin VSS -inst {} -override -verbose
+globalNetConnect VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+globalNetConnect 1VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+globalNetConnect 2VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+globalNetConnect 3VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+globalNetConnect 3VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+globalNetConnect 2VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+globalNetConnect 1VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+globalNetConnect VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+globalNetConnect VDD -type pgpin -pin VDD -inst * -module {} -override -verbose
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {1VDD 1VSS 2VDD 2VSS 3VDD 3VSS VDD VSS} -type core_rings -follow core -layer {top M3 bottom M3 left TOP_M right TOP_M} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+undo
+fit
+fit
+init_design

@@ -1,0 +1,1051 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v17.12-s095_1, built Thu Nov 9 12:10:01 PST 2017
+Options:	
+Date:		Tue Dec 19 11:33:34 2023
+Host:		cadence5 (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (4cores*4cpus*Intel(R) Xeon(R) CPU E5-1607 v3 @ 3.10GHz 10240KB)
+OS:		Red Hat Enterprise Linux Server release 7.9 (Maipo)
+
+License:
+		invs	Innovus Implementation System	17.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (15 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> getVersion
+[INFO] Loading PVS 16.12-s208 fill procedures
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+<CMD> win
+<CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+<CMD> set conf_qxconf_file NULL
+<CMD> set conf_qxlib_file NULL
+<CMD> set defHierChar /
+<CMD> set distributed_client_message_echo 1
+<CMD> set distributed_mmmc_disable_reports_auto_redirection 0
+<CMD> set eco_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+<CMD> set enc_enable_print_mode_command_reset_options 1
+<CMD> set init_gnd_net {VSS VSSO 1VSS 1VSSO 2VSS 2VSSO 3VSS 3VSSO}
+<CMD> set init_io_file innovusinputfiles/padframe_ram1.io
+<CMD> set init_lef_file {../../../pdk/scl_pdk/stdlib/fs120/tech_data/lef/tsl180l4.lef ../../../pdk/scl_pdk/stdlib/fs120/lef/tsl18fs120_scl.lef ../../../pdk/scl_pdk/iolib/cio250/cds/lef/tsl18cio250_4lm.lef}
+<CMD> set init_mmmc_file innovusinputfiles/viewDefinition.tcl
+<CMD> set init_pwr_net {VDD VDDO 1VDD 1VDDO 2VDD 2VDDO 3VDD 3VDDO}
+<CMD> set init_verilog innovusinputfiles/ram_netlist.v
+<CMD> set latch_time_borrow_mode max_borrow
+<CMD> set pegDefaultResScaleFactor 1
+<CMD> set pegDetailResScaleFactor 1
+<CMD> set report_inactive_arcs_format {from to when arc_type sense reason}
+<CMD> set soft_stack_size_limit 15
+<CMD> set tso_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+<CMD> init_design
+#% Begin Load MMMC data ... (date=12/19 11:47:35, mem=488.6M)
+#% End Load MMMC data ... (date=12/19 11:47:35, total cpu=0:00:00.0, real=0:00:00.0, peak res=488.7M, current mem=488.7M)
+my_rc_corner_worst
+
+Loading LEF file ../../../pdk/scl_pdk/stdlib/fs120/tech_data/lef/tsl180l4.lef ...
+
+Loading LEF file ../../../pdk/scl_pdk/stdlib/fs120/lef/tsl18fs120_scl.lef ...
+Set DBUPerIGU to M2 pitch 560.
+
+Loading LEF file ../../../pdk/scl_pdk/iolib/cio250/cds/lef/tsl18cio250_4lm.lef ...
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'apc3d01' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03ed' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b21eu' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b25eu' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3d00' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+viaInitial starts at Tue Dec 19 11:47:36 2023
+viaInitial ends at Tue Dec 19 11:47:36 2023
+Loading view definition file from innovusinputfiles/viewDefinition.tcl
+Reading my_max_library_set timing library '/home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib' ...
+Both ff/latch and statetable are present in cell 'lanht4'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+Both ff/latch and statetable are present in cell 'lanht2'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'I' of cell 'bh01d1' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'I' of cell 'bh01d1' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+Both ff/latch and statetable are present in cell 'lanht1'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+Read 534 cells in library 'tsl18fs120_scl_ss' 
+Reading my_max_library_set timing library '/home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib' ...
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1171)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1185)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1408)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1422)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1644)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1658)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1880)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1894)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2117)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2131)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2354)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2368)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2590)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2604)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2827)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2841)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3071)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3085)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3308)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3322)
+Message <TECHLIB-1318> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'XOUT' of cell 'pc3x11' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'XOUT' of cell 'pc3x11' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'XOUT' of cell 'pc3x12' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'XOUT' of cell 'pc3x12' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'XOUT' of cell 'pc3x13' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'XOUT' of cell 'pc3x13' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'PAD' of cell 'pc3d00' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'PAD' of cell 'pc3d00' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'PADR' of cell 'pc3d00' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'PADR' of cell 'pc3d00' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVSSO' of cell 'apv0a' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVSSO' of cell 'apv0a' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVSS' of cell 'apv0i' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVSS' of cell 'apv0i' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVDDO' of cell 'apvda' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVDDO' of cell 'apvda' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVDD' of cell 'apvdi' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVDD' of cell 'apvdi' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 93 cells in library 'tsl18cio250_max' 
+Reading my_min_library_set timing library '/home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib' ...
+Both ff/latch and statetable are present in cell 'lanht4'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib)
+Both ff/latch and statetable are present in cell 'lanht2'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib)
+Both ff/latch and statetable are present in cell 'lanht1'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib)
+Read 534 cells in library 'tsl18fs120_scl_ff' 
+Reading my_min_library_set timing library '/home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_min.lib' ...
+Read 93 cells in library 'tsl18cio250_min' 
+*** End library_loading (cpu=0.02min, real=0.02min, mem=28.8M, fe_cpu=1.32min, fe_real=14.05min, fe_mem=572.1M) ***
+#% Begin Load netlist data ... (date=12/19 11:47:37, mem=566.0M)
+*** Begin netlist parsing (mem=572.1M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'aoim22d1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'aoim22d1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'or04d2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'or04d2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'an02d1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'an02d1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'nd02da' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'nd02da' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'dl03d2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'dl03d2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'invtd7' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'invtd7' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'slnht2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'slnht2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'aoim22d2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'aoim22d2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'mffnrb2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'mffnrb2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'nr03d7' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'nr03d7' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Pin 'VDD' of cell 'pvdi' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'VDDC' of cell 'pvdc' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'VDDO' of cell 'pvda' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'VSS' of cell 'pv0i' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'VSS' of cell 'pv0f' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'VSSC' of cell 'pv0c' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'VSSO' of cell 'pv0a' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'AVDD' of cell 'apvdi' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'AVDDO' of cell 'apvda' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'AVSS' of cell 'apv0i' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'AVSSO' of cell 'apv0a' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Created 627 new cells from 4 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'innovusinputfiles/ram_netlist.v'
+
+*** Memory Usage v#1 (Current mem = 572.074M, initial mem = 179.895M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=572.1M) ***
+#% End Load netlist data ... (date=12/19 11:47:37, total cpu=0:00:00.0, real=0:00:00.0, peak res=566.0M, current mem=516.6M)
+Top level cell is single_port_sync_ram.
+**WARN: (IMPTS-282):	Cell 'pt3t03u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3t03d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3t03' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3t02u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3t02d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3t02' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3t01u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3t01d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3t01' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3o03' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3o02' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3o01' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pc3t05u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pc3t05d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pc3t05' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pc3t04u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pc3t04d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pc3t04' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pc3t03u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pc3t03d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (EMS-27):	Message (IMPTS-282) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Hooked 1254 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell single_port_sync_ram ...
+*** Netlist is unique.
+** info: there are 1285 modules.
+** info: there are 1499 stdCell insts.
+** info: there are 40 Pad insts.
+
+*** Memory Usage v#1 (Current mem = 595.746M, initial mem = 179.895M) ***
+Reading IO assignment file "innovusinputfiles/padframe_ram1.io" ...
+Adjusting Core to Left to: 0.3200. Core to Bottom to: 0.3200.
+**WARN: (IMPFP-3961):	The techSite 'CO_MSTR_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 0 (derived)
+Vertical Layer M2 offset = 280 (derived)
+Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/vlsi5/praveen_design/single_port_RAM/pd/innovusinputfiles/ram_constraint.sdc' ...
+Current (total cpu=0:01:20, real=0:14:03, peak res=657.7M, current mem=657.7M)
+single_port_sync_ram
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File /home/vlsi5/praveen_design/single_port_RAM/pd/innovusinputfiles/ram_constraint.sdc, Line 56).
+
+INFO (CTE): Reading of timing constraints file /home/vlsi5/praveen_design/single_port_RAM/pd/innovusinputfiles/ram_constraint.sdc completed, with 1 WARNING
+WARNING (CTE-25): Line: 9, 10 of File /home/vlsi5/praveen_design/single_port_RAM/pd/innovusinputfiles/ram_constraint.sdc : Skipped unsupported command: set_units
+
+
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=675.6M, current mem=675.6M)
+Current (total cpu=0:01:20, real=0:14:03, peak res=675.6M, current mem=675.6M)
+Total number of combinational cells: 321
+Total number of sequential cells: 203
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: bufbd7 buffd2 bufbdf buffda buffd3 bufbda buffd4 bufbd4 bufbd1 bufbd3 buffd7 buffd1 bufbd2
+Total number of usable buffers: 13
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: inv0d2 inv0da invbda invbdk inv0d1 inv0d7 invbd4 inv0d0 invbd2 inv0d4 invbd7 invbdf
+Total number of usable inverters: 12
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: dl04d1 dl03d1 dl02d2 dl03d4 dl04d2 dl02d1 dl01d4 bufbdk dl04d4 dl02d4 dl01d2 dl01d1 dl03d2
+Total number of identified usable delay cells: 13
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 6 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 6 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 2.5 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.04 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: my_analysis_view_setup
+    RC-Corner Name        : my_rc_corner_worst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: my_analysis_view_hold
+    RC-Corner Name        : my_rc_corner_worst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200           49  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   IMPTS-282           92  Cell '%s' is not a level shifter cell bu...
+WARNING   IMPEXT-2766          4  The sheet resistance for layer %s is not...
+WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+WARNING   IMPEXT-2776          3  The via resistance between layers %s and...
+WARNING   IMPVL-159         1435  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+ERROR     TECHLIB-1318        20  All the table values in the '%s' group a...
+*** Message Summary: 1607 warning(s), 20 error(s)
+
+<CMD> getIoFlowFlag
+<CMD> selectInst cornercell2
+<CMD> deselectAll
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -d 1710.0 1710.0 0.32 0.32 0.0 2.48
+**WARN: (IMPFP-4026):	Adjusting core to 'Left' to 0.560000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4026):	Adjusting core to 'Bottom' to 0.560000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4026):	Adjusting core to 'Top' to 2.240000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+Horizontal Layer M1 offset = 0 (derived)
+Vertical Layer M2 offset = 280 (derived)
+Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -d 1710.24 1710.24 0.56 0.56 0.0 2.24
+Horizontal Layer M1 offset = 0 (derived)
+Vertical Layer M2 offset = 280 (derived)
+Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> uiSetTool ruler
+<CMD> uiSetTool ruler
+<CMD> fit
+<CMD> uiSetTool select
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -b 0.0 0.0 1710.24 1710.24 250.0 250.0 1460.24 1460.24 300.56 300.56 1410.24 1410.0
+**WARN: (IMPFP-4031):	Adjusting 'coreBox'(according to PlacementGrid) from {(300.560000 , 300.560000) (1410.240000 , 1410.000000)} to {(300.720000 , 300.720000) (1410.080000 , 1410.080000)} due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4031):	Adjusting 'ioBox'(according to PlacementGrid) from {(250.000000 , 250.000000) (1460.240000 , 1460.240000)} to {(249.760000 , 249.760000) (1460.480000 , 1460.480000)} due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+Horizontal Layer M1 offset = 0 (derived)
+Vertical Layer M2 offset = 280 (derived)
+Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -b 0.0 0.0 1710.24 1710.24 249.76 249.76 1460.48 1460.48 300.72 300.72 1410.08 1410.08
+Horizontal Layer M1 offset = 0 (derived)
+Vertical Layer M2 offset = 280 (derived)
+Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> uiSetTool ruler
+<CMD> uiSetTool ruler
+<CMD> fit
+<CMD> addIoFiller -cell pfeed02000 -prefix FILLER -side n
+Added 150 of filler cell 'pfeed02000' on top side.
+<CMD> addIoFiller -cell pfeed02000 -prefix FILLER -side e
+Added 150 of filler cell 'pfeed02000' on right side.
+<CMD> addIoFiller -cell pfeed02000 -prefix FILLER -side w
+Added 150 of filler cell 'pfeed02000' on left side.
+<CMD> addIoFiller -cell pfeed02000 -prefix FILLER -side s
+Added 150 of filler cell 'pfeed02000' on bottom side.
+<CMD> fit
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -override -verbose -netlistOverride
+1555 new pwr-pin connections were made to global net 'VDD'.
+<CMD> globalNetConnect 1VDD -type pgpin -pin VDD -override -verbose -netlistOverride
+1555 new pwr-pin connections were made to global net '1VDD'.
+<CMD> globalNetConnect 2VDD -type pgpin -pin VDD -override -verbose -netlistOverride
+1555 new pwr-pin connections were made to global net '2VDD'.
+<CMD> globalNetConnect 3VDD -type pgpin -pin VDD -override -verbose -netlistOverride
+1555 new pwr-pin connections were made to global net '3VDD'.
+<CMD> globalNetConnect 3VSS -type pgpin -pin VSS -override -verbose -netlistOverride
+1555 new gnd-pin connections were made to global net '3VSS'.
+<CMD> globalNetConnect 2VSS -type pgpin -pin VSS -override -verbose -netlistOverride
+1555 new gnd-pin connections were made to global net '2VSS'.
+<CMD> globalNetConnect 1VSS -type pgpin -pin VSS -override -verbose -netlistOverride
+1555 new gnd-pin connections were made to global net '1VSS'.
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -override -verbose -netlistOverride
+1555 new gnd-pin connections were made to global net 'VSS'.
+<CMD> globalNetConnect VDDO - type pgpin -pin VDDO -override -verbose -netlistOverride
+
+Usage: globalNetConnect [-help] [<globalNetName>] [-all] [-autoTie]
+                        [-disconnect] [-hierarchicalInstance <string>]
+                        [-instanceBasename <string>] [-net <string>]
+                        [-netlistOverride] [-nonHierarchical] [-override]
+                        [-pin <string>] [-powerDomain <string>]
+                        [-region {x1 y1 x2 y2}] [-singleInstance <string>]
+                        [-type {pgpin tiehi tielo net}] [-verbose]
+
+**ERROR: (IMPTCM-48):	"-" is not a legal option for command "globalNetConnect". Either the current option or an option prior to it is not specified correctly.
+
+<CMD> globalNetConnect VDDO -type pgpin -pin VDDO -override -verbose -netlistOverride
+56 new pwr-pin connections were made to global net 'VDDO'.
+<CMD> globalNetConnect 1VDDO -type pgpin -pin VDDO -override -verbose -netlistOverride
+56 new pwr-pin connections were made to global net '1VDDO'.
+<CMD> globalNetConnect 2VDDO -type pgpin -pin VDDO -override -verbose -netlistOverride
+56 new pwr-pin connections were made to global net '2VDDO'.
+<CMD> globalNetConnect 3VDDO -type pgpin -pin VDDO -override -verbose -netlistOverride
+56 new pwr-pin connections were made to global net '3VDDO'.
+<CMD> globalNetConnect 3VSSO -type pgpin -pin VSSO -override -verbose -netlistOverride
+56 new gnd-pin connections were made to global net '3VSSO'.
+<CMD> globalNetConnect 2VSSO -type pgpin -pin VSSO -override -verbose -netlistOverride
+56 new gnd-pin connections were made to global net '2VSSO'.
+<CMD> globalNetConnect 1VSSO -type pgpin -pin VSSO -override -verbose -netlistOverride
+56 new gnd-pin connections were made to global net '1VSSO'.
+<CMD> globalNetConnect VSSO -type pgpin -pin VSSO -override -verbose -netlistOverride
+56 new gnd-pin connections were made to global net 'VSSO'.
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -b 0.0 0.0 1710.24 1710.24 249.76 249.76 1460.48 1460.48 300.72 300.72 1400.08 1400.08
+**WARN: (IMPFP-4031):	Adjusting 'coreBox'(according to PlacementGrid) from {(300.720000 , 300.720000) (1400.080000 , 1400.080000)} to {(300.720000 , 300.720000) (1400.000000 , 1400.000000)} due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'N' between IOs 'FILLER_N_45' and '1VSSO'.
+**WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'W' between IOs 'FILLER_W_45' and 'VSSO'.
+**WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'S' between IOs 'FILLER_S_45' and '3VSSO'.
+**WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'E' between IOs 'FILLER_E_45' and '2VSSO'.
+Horizontal Layer M1 offset = 0 (derived)
+Vertical Layer M2 offset = 280 (derived)
+Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> floorPlan -site CoreSite -noSnapToGrid -d 1710 1710 20 20 20 20
+**WARN: (IMPFP-501):	fplan box is not large enough to accommodate all the io pads.
+Horizontal Layer M1 offset = 0 (derived)
+Vertical Layer M2 offset = 280 (derived)
+Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> selectInst FILLER_W_27
+<CMD> deleteIoFiller -cell pfeed0200 -prefix FILLER -side n
+**ERROR: (IMPFP-3352):	Cell pfeed0200 not found.
+
+**ERROR: (IMPSYT-6580):	<CMD> fit
+<CMD> deselectAll
+<CMD> selectInst FILLER_N_126
+<CMD> deselectAll
+<CMD> selectInst FILLER_N_85
+<CMD> deselectAll
+<CMD> selectInst FILLER_E_86
+<CMD> deleteSelectedFromFPlan
+<CMD> deleteSelectedFromFPlan
+<CMD> deselectAll
+<CMD> deleteSelectedFromFPlan
+<CMD> selectInst FILLER_E_131
+<CMD> deleteSelectedFromFPlan
+<CMD> deselectAll
+<CMD> deleteSelectedFromFPlan
+<CMD> deleteSelectedFromFPlan
+**ERROR: (IMPSYT-6000):	No Object Selected.
+<CMD> selectInst FILLER_E_78
+<CMD> deleteSelectedFromFPlan
+<CMD> deselectAll
+<CMD> deleteSelectedFromFPlan
+<CMD> selectInst FILLER_E_79
+<CMD> deleteSelectedFromFPlan
+<CMD> deleteSelectedFromFPlan
+<CMD> deselectAll
+<CMD> selectInst FILLER_E_82
+<CMD> selectInst FILLER_E_90
+<CMD> selectInst FILLER_E_140
+<CMD> selectInst FILLER_E_118
+<CMD> selectInst FILLER_E_19
+<CMD> selectInst FILLER_E_32
+<CMD> gui_select -append -rect {1593.619 355.478 1593.619 348.442}
+<CMD> selectInst FILLER_E_60
+<CMD> selectInst FILLER_E_139
+<CMD> selectInst FILLER_E_144
+<CMD> selectInst FILLER_E_146
+<CMD> selectInst FILLER_E_147
+<CMD> deselectAll
+<CMD> deleteIoFiller -cell pfeed02000 -prefix FILLER -side n
+Total 150 cells are deleted.
+<CMD> fit
+<CMD> deleteIoFiller -cell pfeed02000 -prefix FILLER -side s
+Total 150 cells are deleted.
+<CMD> deleteIoFiller -cell pfeed02000 -prefix FILLER -side w
+Total 150 cells are deleted.
+<CMD> deleteIoFiller -cell pfeed02000 -prefix FILLER -side w
+Total 0 cells are deleted.
+<CMD> selectInst Addr3
+<CMD> deleteIoFiller -cell pfeed02000 -prefix FILLER -side w
+Total 0 cells are deleted.
+<CMD> deleteIoFiller -cell pfeed02000 -prefix FILLER -side w
+Total 0 cells are deleted.
+<CMD> deleteIoFiller -cell pfeed02000 -prefix FILLER -side w
+Total 0 cells are deleted.
+<CMD> deleteIoFiller -cell pfeed02000 -prefix FILLER -side e
+Total 150 cells are deleted.
+<CMD> deleteIoFiller -cell pfeed02000 -prefix FILLER -side e
+Total 0 cells are deleted.
+<CMD> floorPlan -site CoreSite -noSnapToGrid -d 1710 1710 20 20 20 20
+Horizontal Layer M1 offset = 0 (derived)
+Vertical Layer M2 offset = 280 (derived)
+Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+<CMD> deselectAll
+<CMD> addIoFiller -cell pfeed02000 -prefix FILLER -side n
+Added 150 of filler cell 'pfeed02000' on top side.
+<CMD> addIoFiller -cell pfeed02000 -prefix FILLER -side n
+Added 0 of filler cell 'pfeed02000' on top side.
+<CMD> addIoFiller -cell pfeed02000 -prefix FILLER -side s
+Added 150 of filler cell 'pfeed02000' on bottom side.
+<CMD> addIoFiller -cell pfeed02000 -prefix FILLER -side w
+Added 150 of filler cell 'pfeed02000' on left side.
+<CMD> addIoFiller -cell pfeed02000 -prefix FILLER -side e
+Added 150 of filler cell 'pfeed02000' on right side.
+<CMD> addIoFiller -cell pfeed02000 -prefix FILLER -side e
+Added 0 of filler cell 'pfeed02000' on right side.
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -b 0.0 0.0 1710.0 1710.0 250.0 250.0 1460.0 1460.0 270.0 270.0 1410.0 1410.0
+**WARN: (IMPFP-4031):	Adjusting 'coreBox'(according to PlacementGrid) from {(270.000000 , 270.000000) (1410.000000 , 1410.000000)} to {(269.920000 , 269.920000) (1410.080000 , 1410.080000)} due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4031):	Adjusting 'DieBox'(according to PlacementGrid) from {(0.000000 , 0.000000) (1710.000000 , 1710.000000)} to {(0.000000 , 0.000000) (1710.240000 , 1710.240000)} due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4031):	Adjusting 'ioBox'(according to PlacementGrid) from {(250.000000 , 250.000000) (1460.000000 , 1460.000000)} to {(249.760000 , 249.760000) (1459.920000 , 1459.920000)} due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'N' between IOs 'FILLER_N_45' and '1VSSO'.
+**WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'W' between IOs 'FILLER_W_45' and 'VSSO'.
+**WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'S' between IOs 'FILLER_S_45' and '3VSSO'.
+**WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'E' between IOs 'FILLER_E_45' and '2VSSO'.
+Horizontal Layer M1 offset = 0 (derived)
+Vertical Layer M2 offset = 280 (derived)
+Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> undo
+<CMD> undo
+<CMD> undo
+<CMD> undo
+<CMD> deleteIoFiller -cell pfeed02000 -prefix FILLER -side e
+Total 150 cells are deleted.
+<CMD> deleteIoFiller -cell pfeed02000 -prefix FILLER -side w
+Total 150 cells are deleted.
+<CMD> deleteIoFiller -cell pfeed02000 -prefix FILLER -side s
+Total 150 cells are deleted.
+<CMD> deleteIoFiller -cell pfeed02000 -prefix FILLER -side n
+Total 150 cells are deleted.
+<CMD> deleteIoFiller -cell pfeed02000 -prefix FILLER -side n
+Total 0 cells are deleted.
+<CMD> floorPlan -site CoreSite -noSnapToGrid -d 1710 1710 20 20 20 20
+Horizontal Layer M1 offset = 0 (derived)
+Vertical Layer M2 offset = 280 (derived)
+Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -b 0.0 0.0 1710.0 1710.0 250.0 250.0 1460.0 1460.0 320.0 320.0 1390.0 1390.0
+**WARN: (IMPFP-4031):	Adjusting 'coreBox'(according to PlacementGrid) from {(320.000000 , 320.000000) (1390.000000 , 1390.000000)} to {(319.760000 , 319.760000) (1389.920000 , 1389.920000)} due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4031):	Adjusting 'DieBox'(according to PlacementGrid) from {(0.000000 , 0.000000) (1710.000000 , 1710.000000)} to {(0.000000 , 0.000000) (1710.240000 , 1710.240000)} due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4031):	Adjusting 'ioBox'(according to PlacementGrid) from {(250.000000 , 250.000000) (1460.000000 , 1460.000000)} to {(249.760000 , 249.760000) (1459.920000 , 1459.920000)} due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+Horizontal Layer M1 offset = 0 (derived)
+Vertical Layer M2 offset = 280 (derived)
+Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -b 0.0 0.0 1710.24 1710.24 249.76 249.76 1459.92 1459.92 319.76 319.76 1389.92 1389.92
+Horizontal Layer M1 offset = 0 (derived)
+Vertical Layer M2 offset = 280 (derived)
+Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> addRing -skip_via_on_wire_shape Noshape -exclude_selected 1 -skip_via_on_pin Standardcell -center 1 -stacked_via_top_layer TOP_M -type core_rings -jog_distance 0.56 -threshold 0.56 -nets {VDD VSS} -follow core -stacked_via_bottom_layer M1 -layer {bottom M3 top M3 right TOP_M left TOP_M} -width 4 -spacing 1 -offset 2
+#% Begin addRing (date=12/19 12:11:58, mem=943.5M)
+**WARN: (IMPPP-4022):	Option "-stacked_via_top_layer" is obsolete and has been replaced by "setAddRingMode -stacked_via_top_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddRingMode -stacked_via_top_layer layerName"..
+**WARN: (IMPPP-4022):	Option "-stacked_via_bottom_layer" is obsolete and has been replaced by "setAddRingMode -stacked_via_bottom_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddRingMode -stacked_via_bottom_layer layerName"..
+
+Ring generation is complete.
+vias are now being generated.
+addRing created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M3   |        4       |       NA       |
+|  TOP_V |        8       |        0       |
+|  TOP_M |        4       |       NA       |
++--------+----------------+----------------+
+#% End addRing (date=12/19 12:11:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=945.2M, current mem=945.2M)
+<CMD> addRing -skip_via_on_wire_shape Noshape -exclude_selected 1 -skip_via_on_pin Standardcell -center 1 -stacked_via_top_layer TOP_M -type core_rings -jog_distance 0.56 -threshold 0.56 -nets {1VDD 1VSS} -follow core -stacked_via_bottom_layer M1 -layer {bottom M3 top M3 right TOP_M left TOP_M} -width 4 -spacing 1 -offset 2
+#% Begin addRing (date=12/19 12:12:26, mem=945.2M)
+**WARN: (IMPPP-4022):	Option "-stacked_via_top_layer" is obsolete and has been replaced by "setAddRingMode -stacked_via_top_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddRingMode -stacked_via_top_layer layerName"..
+**WARN: (IMPPP-4022):	Option "-stacked_via_bottom_layer" is obsolete and has been replaced by "setAddRingMode -stacked_via_bottom_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddRingMode -stacked_via_bottom_layer layerName"..
+
+Ring generation is complete.
+#% End addRing (date=12/19 12:12:26, total cpu=0:00:00.0, real=0:00:00.0, peak res=945.3M, current mem=945.3M)
+<CMD> selectWire 285.3800 285.3800 289.3800 1424.3000 4 VDD
+<CMD> deselectAll
+<CMD> selectWire 280.3800 280.3800 284.3800 1429.3000 4 VSS
+<CMD> deselectAll
+<CMD> selectWire 1420.5800 285.3800 1424.5800 1424.3000 4 VDD
+<CMD> deselectAll
+<CMD> selectWire 285.3800 285.3800 1424.5800 289.3800 3 VDD
+<CMD> addRing -skip_via_on_wire_shape Noshape -exclude_selected 1 -skip_via_on_pin Standardcell -center 1 -stacked_via_top_layer TOP_M -type core_rings -jog_distance 0.56 -threshold 0.56 -nets {2VDD 2VSS} -follow core -stacked_via_bottom_layer M1 -layer {bottom M3 top M3 right TOP_M left TOP_M} -width 4 -spacing 1 -offset 2
+#% Begin addRing (date=12/19 12:14:36, mem=948.3M)
+**WARN: (IMPPP-4022):	Option "-stacked_via_top_layer" is obsolete and has been replaced by "setAddRingMode -stacked_via_top_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddRingMode -stacked_via_top_layer layerName"..
+**WARN: (IMPPP-4022):	Option "-stacked_via_bottom_layer" is obsolete and has been replaced by "setAddRingMode -stacked_via_bottom_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddRingMode -stacked_via_bottom_layer layerName"..
+
+Ring generation is complete.
+#% End addRing (date=12/19 12:14:36, total cpu=0:00:00.0, real=0:00:00.0, peak res=948.3M, current mem=948.3M)
+<CMD> deselectAll
+<CMD> pan 92.405 -98.339
+<CMD> pan 351.067 5.652
+<CMD> pan 321.146 -15.625
+<CMD> pan -14.295 151.597
+<CMD> fit
+<CMD> fit
+<CMD> pan 65.330 363.985
+<CMD> pan -509.959 -335.499
+<CMD> pan 23.713 -185.210
+<CMD> pan 525.326 854.013
+<CMD> fit
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {1VDD 1VSS 2VDD 2VSS 3VDD 3VSS } -type core_rings -follow core -layer {top M3 bottom M3 left TOP_M right TOP_M} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+Ring generation is complete.
+vias are now being generated.
+addRing created 24 wires.
+ViaGen created 24 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M3   |       12       |       NA       |
+|  TOP_V |       24       |        0       |
+|  TOP_M |       12       |       NA       |
++--------+----------------+----------------+
+<CMD> pan -31.938 -286.361
+<CMD> pan -146.405 724.704
+<CMD> fit
+<CMD> sroute -connect {blockPin corePin padPin padRing floatingStripe secondaryPowerPin} -layerChangeRange {M1 TOP_M} -blockPinTarget nearestTarget -padPinPortConnect {allPort oneGeom} -padPinTarget nearestTarget -corePinTarget firstAfterRowEnd -floatingStripeTarget {blockring ring stripe padring ringpin blockpin followpin} -allowjogging 1 -crossoverViaLayerRange {M1 TOP_M} -nets {VDD VSS} -allowLayerChange 1 -blockPin useLef -targetViaLayerRange {M1 TOP_M}
+#% Begin sroute (date=12/19 12:22:55, mem=953.4M)
+**WARN: (IMPSR-4064):	sroute -connect { secondaryPowerPin } connects level shifter secondary power pins in the special nets. Specify the net name with option -secondaryPinNet. Ignore connecting level shifter secondary power pins for now.
+*** Begin SPECIAL ROUTE on Tue Dec 19 12:22:55 2023 ***
+SPECIAL ROUTE ran on directory: /home/vlsi5/praveen_design/single_port_RAM/pd
+SPECIAL ROUTE ran on machine: cadence5 (Linux 3.10.0-1160.el7.x86_64 Xeon 3.10Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 4
+srouteFloatingStripeTarget set to "blockring ring stripe padring ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 4
+srouteTopTargetLayerLimit set to 4
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1777.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 8 layers, 4 routing layers, 1 overlap layer
+Read in 1082 macros, 21 used
+Read in 74 components
+  14 core components: 14 unplaced, 0 placed, 0 fixed
+  56 pad components: 0 unplaced, 0 placed, 56 fixed
+  4 other components: 0 unplaced, 0 placed, 4 fixed
+Read in 40 logical pins
+Read in 40 nets
+Read in 16 special nets, 8 routed
+Read in 252 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-559):	Cannot route core pins and converter pins at the same time!
+**WARN: (IMPSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+  Number of IO ports routed: 4
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Pad Ring connections: 72
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1797.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute created 76 wires.
+ViaGen created 4 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M2   |        5       |       NA       |
+|   V3   |        1       |        0       |
+|   M3   |       62       |       NA       |
+|  TOP_V |        3       |        0       |
+|  TOP_M |        9       |       NA       |
++--------+----------------+----------------+
+#% End sroute (date=12/19 12:22:55, total cpu=0:00:00.3, real=0:00:00.0, peak res=975.9M, current mem=975.9M)
+<CMD> sroute -connect {blockPin corePin padPin padRing floatingStripe secondaryPowerPin} -layerChangeRange {M1 TOP_M} -blockPinTarget nearestTarget -padPinPortConnect {allPort oneGeom} -padPinTarget nearestTarget -corePinTarget firstAfterRowEnd -floatingStripeTarget {blockring ring stripe padring ringpin blockpin followpin} -allowjogging 1 -crossoverViaLayerRange {M1 TOP_M} -nets {1VDD 1VSS} -allowLayerChange 1 -blockPin useLef -targetViaLayerRange {M1 TOP_M}
+#% Begin sroute (date=12/19 12:23:15, mem=975.9M)
+**WARN: (IMPSR-4064):	sroute -connect { secondaryPowerPin } connects level shifter secondary power pins in the special nets. Specify the net name with option -secondaryPinNet. Ignore connecting level shifter secondary power pins for now.
+*** Begin SPECIAL ROUTE on Tue Dec 19 12:23:15 2023 ***
+SPECIAL ROUTE ran on directory: /home/vlsi5/praveen_design/single_port_RAM/pd
+SPECIAL ROUTE ran on machine: cadence5 (Linux 3.10.0-1160.el7.x86_64 Xeon 3.10Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "1VDD 1VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 4
+srouteFloatingStripeTarget set to "blockring ring stripe padring ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 4
+srouteTopTargetLayerLimit set to 4
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1797.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 8 layers, 4 routing layers, 1 overlap layer
+Read in 1082 macros, 21 used
+Read in 74 components
+  14 core components: 14 unplaced, 0 placed, 0 fixed
+  56 pad components: 0 unplaced, 0 placed, 56 fixed
+  4 other components: 0 unplaced, 0 placed, 4 fixed
+Read in 40 logical pins
+Read in 40 nets
+Read in 16 special nets, 8 routed
+Read in 252 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-559):	Cannot route core pins and converter pins at the same time!
+**WARN: (IMPSR-1254):	Cannot find any block pin of net 1VDD. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net 1VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net 1VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net 1VSS. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net 1VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net 1VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1797.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 0 via definition ...
+sroute created 0 wire.
+ViaGen created 0 via, deleted 0 via to avoid violation.
+#% End sroute (date=12/19 12:23:15, total cpu=0:00:00.2, real=0:00:00.0, peak res=975.9M, current mem=972.0M)
+<CMD> fit
+<CMD> pan 64.593 12.918
+<CMD> pan 310.428 -113.939
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+**ERROR: (IMPSYT-6000):	No Object Selected.
+<CMD> pan 18.585 -322.700
+<CMD> pan -178.897 141.131
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst {} -override -verbose
+1555 new pwr-pin connections were made to global net 'VDD'.
+<CMD> globalNetConnect 1VDD -type pgpin -pin VDD -inst {} -override -verbose
+1555 new pwr-pin connections were made to global net '1VDD'.
+<CMD> globalNetConnect 2VDD -type pgpin -pin VDD -inst {} -override -verbose
+1555 new pwr-pin connections were made to global net '2VDD'.
+<CMD> globalNetConnect 3VDD -type pgpin -pin VDD -inst {} -override -verbose
+1555 new pwr-pin connections were made to global net '3VDD'.
+<CMD> globalNetConnect 3VSS -type pgpin -pin VSS -inst {} -override -verbose
+1555 new gnd-pin connections were made to global net '3VSS'.
+<CMD> globalNetConnect 2VSS -type pgpin -pin VSS -inst {} -override -verbose
+1555 new gnd-pin connections were made to global net '2VSS'.
+<CMD> globalNetConnect 1VSS -type pgpin -pin VSS -inst {} -override -verbose
+1555 new gnd-pin connections were made to global net '1VSS'.
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst {} -override -verbose
+1555 new gnd-pin connections were made to global net 'VSS'.
+<CMD> globalNetConnect VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+56 new pwr-pin connections were made to global net 'VDDO'.
+<CMD> globalNetConnect 1VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+56 new pwr-pin connections were made to global net '1VDDO'.
+<CMD> globalNetConnect 2VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+56 new pwr-pin connections were made to global net '2VDDO'.
+<CMD> globalNetConnect 3VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+56 new pwr-pin connections were made to global net '3VDDO'.
+<CMD> globalNetConnect 3VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+56 new gnd-pin connections were made to global net '3VSSO'.
+<CMD> globalNetConnect 2VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+56 new gnd-pin connections were made to global net '2VSSO'.
+<CMD> globalNetConnect 1VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+56 new gnd-pin connections were made to global net '1VSSO'.
+<CMD> globalNetConnect VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+56 new gnd-pin connections were made to global net 'VSSO'.
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst {} -override -verbose
+1555 new pwr-pin connections were made to global net 'VDD'.
+<CMD> globalNetConnect 1VDD -type pgpin -pin VDD -inst {} -override -verbose
+1555 new pwr-pin connections were made to global net '1VDD'.
+<CMD> globalNetConnect 2VDD -type pgpin -pin VDD -inst {} -override -verbose
+1555 new pwr-pin connections were made to global net '2VDD'.
+<CMD> globalNetConnect 3VDD -type pgpin -pin VDD -inst {} -override -verbose
+1555 new pwr-pin connections were made to global net '3VDD'.
+<CMD> globalNetConnect 3VSS -type pgpin -pin VSS -inst {} -override -verbose
+1555 new gnd-pin connections were made to global net '3VSS'.
+<CMD> globalNetConnect 2VSS -type pgpin -pin VSS -inst {} -override -verbose
+1555 new gnd-pin connections were made to global net '2VSS'.
+<CMD> globalNetConnect 1VSS -type pgpin -pin VSS -inst {} -override -verbose
+1555 new gnd-pin connections were made to global net '1VSS'.
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst {} -override -verbose
+1555 new gnd-pin connections were made to global net 'VSS'.
+<CMD> globalNetConnect VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+56 new pwr-pin connections were made to global net 'VDDO'.
+<CMD> globalNetConnect 1VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+56 new pwr-pin connections were made to global net '1VDDO'.
+<CMD> globalNetConnect 2VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+56 new pwr-pin connections were made to global net '2VDDO'.
+<CMD> globalNetConnect 3VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+56 new pwr-pin connections were made to global net '3VDDO'.
+<CMD> globalNetConnect 3VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+56 new gnd-pin connections were made to global net '3VSSO'.
+<CMD> globalNetConnect 2VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+56 new gnd-pin connections were made to global net '2VSSO'.
+<CMD> globalNetConnect 1VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+56 new gnd-pin connections were made to global net '1VSSO'.
+<CMD> globalNetConnect VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+56 new gnd-pin connections were made to global net 'VSSO'.
+<CMD> globalNetConnect VDD -type pgpin -pin {} -inst VDD -module {} -override -verbose
+**ERROR: (IMPDB-1219):	Pin name not specified.
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst {} -override -verbose
+1555 new pwr-pin connections were made to global net 'VDD'.
+<CMD> globalNetConnect 1VDD -type pgpin -pin VDD -inst {} -override -verbose
+1555 new pwr-pin connections were made to global net '1VDD'.
+<CMD> globalNetConnect 2VDD -type pgpin -pin VDD -inst {} -override -verbose
+1555 new pwr-pin connections were made to global net '2VDD'.
+<CMD> globalNetConnect 3VDD -type pgpin -pin VDD -inst {} -override -verbose
+1555 new pwr-pin connections were made to global net '3VDD'.
+<CMD> globalNetConnect 3VSS -type pgpin -pin VSS -inst {} -override -verbose
+1555 new gnd-pin connections were made to global net '3VSS'.
+<CMD> globalNetConnect 2VSS -type pgpin -pin VSS -inst {} -override -verbose
+1555 new gnd-pin connections were made to global net '2VSS'.
+<CMD> globalNetConnect 1VSS -type pgpin -pin VSS -inst {} -override -verbose
+1555 new gnd-pin connections were made to global net '1VSS'.
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst {} -override -verbose
+1555 new gnd-pin connections were made to global net 'VSS'.
+<CMD> globalNetConnect VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+56 new pwr-pin connections were made to global net 'VDDO'.
+<CMD> globalNetConnect 1VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+56 new pwr-pin connections were made to global net '1VDDO'.
+<CMD> globalNetConnect 2VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+56 new pwr-pin connections were made to global net '2VDDO'.
+<CMD> globalNetConnect 3VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+56 new pwr-pin connections were made to global net '3VDDO'.
+<CMD> globalNetConnect 3VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+56 new gnd-pin connections were made to global net '3VSSO'.
+<CMD> globalNetConnect 2VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+56 new gnd-pin connections were made to global net '2VSSO'.
+<CMD> globalNetConnect 1VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+56 new gnd-pin connections were made to global net '1VSSO'.
+<CMD> globalNetConnect VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+56 new gnd-pin connections were made to global net 'VSSO'.
+<CMD> globalNetConnect VDD -type pgpin -pin {} -inst VDD -module {} -override -verbose
+**ERROR: (IMPDB-1219):	Pin name not specified.
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst {} -override -verbose
+1555 new pwr-pin connections were made to global net 'VDD'.
+<CMD> globalNetConnect 1VDD -type pgpin -pin VDD -inst {} -override -verbose
+1555 new pwr-pin connections were made to global net '1VDD'.
+<CMD> globalNetConnect 2VDD -type pgpin -pin VDD -inst {} -override -verbose
+1555 new pwr-pin connections were made to global net '2VDD'.
+<CMD> globalNetConnect 3VDD -type pgpin -pin VDD -inst {} -override -verbose
+1555 new pwr-pin connections were made to global net '3VDD'.
+<CMD> globalNetConnect 3VSS -type pgpin -pin VSS -inst {} -override -verbose
+1555 new gnd-pin connections were made to global net '3VSS'.
+<CMD> globalNetConnect 2VSS -type pgpin -pin VSS -inst {} -override -verbose
+1555 new gnd-pin connections were made to global net '2VSS'.
+<CMD> globalNetConnect 1VSS -type pgpin -pin VSS -inst {} -override -verbose
+1555 new gnd-pin connections were made to global net '1VSS'.
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst {} -override -verbose
+1555 new gnd-pin connections were made to global net 'VSS'.
+<CMD> globalNetConnect VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+56 new pwr-pin connections were made to global net 'VDDO'.
+<CMD> globalNetConnect 1VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+56 new pwr-pin connections were made to global net '1VDDO'.
+<CMD> globalNetConnect 2VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+56 new pwr-pin connections were made to global net '2VDDO'.
+<CMD> globalNetConnect 3VDDO -type pgpin -pin VDDO -inst {} -override -verbose
+56 new pwr-pin connections were made to global net '3VDDO'.
+<CMD> globalNetConnect 3VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+56 new gnd-pin connections were made to global net '3VSSO'.
+<CMD> globalNetConnect 2VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+56 new gnd-pin connections were made to global net '2VSSO'.
+<CMD> globalNetConnect 1VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+56 new gnd-pin connections were made to global net '1VSSO'.
+<CMD> globalNetConnect VSSO -type pgpin -pin VSSO -inst {} -override -verbose
+56 new gnd-pin connections were made to global net 'VSSO'.
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -module {} -override -verbose
+1555 new pwr-pin connections were made to global net 'VDD'.
+**ERROR: (IMPSYT-6000):	No Object Selected.
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {1VDD 1VSS 2VDD 2VSS 3VDD 3VSS VDD VSS} -type core_rings -follow core -layer {top M3 bottom M3 left TOP_M right TOP_M} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+Ring generation is complete.
+vias are now being generated.
+addRing created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M3   |        4       |       NA       |
+|  TOP_V |        8       |        0       |
+|  TOP_M |        4       |       NA       |
++--------+----------------+----------------+
+<CMD> undo
+<CMD> fit
+<CMD> fit
+<CMD> init_design
+**WARN: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPSYT-7329          1  Cannot load design with init_design, aft...
+*** Message Summary: 1 warning(s), 0 error(s)
+
+
+*** Memory Usage v#1 (Current mem = 1014.066M, initial mem = 179.895M) ***
+*** Message Summary: 1653 warning(s), 32 error(s)
+
+--- Ending "Innovus" (totcpu=0:05:58, real=1:03:19, mem=1014.1M) ---

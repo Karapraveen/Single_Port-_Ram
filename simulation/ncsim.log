@@ -1,0 +1,20 @@
+ncsim(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm tb.addr tb.clk tb.cs tb.data tb.oe tb.tb_data tb.we
+Created probe 1
+ncsim> run
+Simulation complete via $finish(1) at time 2670 NS + 0
+./ram_tb.v:40     #2000 $finish;
+ncsim> scope -set tb.u0
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+ncsim: Memory Usage - 38.6M program + 200.7M data = 239.4M total (242.9M Peak)
+ncsim: CPU Usage - 3.0s system + 1.4s user = 4.5s total (276.6s, 1.6% cpu)

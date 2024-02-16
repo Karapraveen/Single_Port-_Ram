@@ -1,0 +1,595 @@
+[12/19 11:06:34      0s] 
+[12/19 11:06:34      0s] Cadence Innovus(TM) Implementation System.
+[12/19 11:06:34      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[12/19 11:06:34      0s] 
+[12/19 11:06:34      0s] Version:	v17.12-s095_1, built Thu Nov 9 12:10:01 PST 2017
+[12/19 11:06:34      0s] Options:	
+[12/19 11:06:34      0s] Date:		Tue Dec 19 11:06:34 2023
+[12/19 11:06:34      0s] Host:		cadence5 (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (4cores*4cpus*Intel(R) Xeon(R) CPU E5-1607 v3 @ 3.10GHz 10240KB)
+[12/19 11:06:34      0s] OS:		Red Hat Enterprise Linux Server release 7.9 (Maipo)
+[12/19 11:06:34      0s] 
+[12/19 11:06:34      0s] License:
+[12/19 11:06:35      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[12/19 11:06:35      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[12/19 11:06:54      9s] @(#)CDS: Innovus v17.12-s095_1 (64bit) 11/09/2017 12:10 (Linux 2.6.18-194.el5)
+[12/19 11:06:54      9s] @(#)CDS: NanoRoute 17.12-s095_1 NR171102-1913/17_12-UB (database version 2.30, 405.7.1) {superthreading v1.44}
+[12/19 11:06:54      9s] @(#)CDS: AAE 17.12-s040 (64bit) 11/09/2017 (Linux 2.6.18-194.el5)
+[12/19 11:06:54      9s] @(#)CDS: CTE 17.12-s036_1 () Nov  2 2017 09:33:40 ( )
+[12/19 11:06:54      9s] @(#)CDS: SYNTECH 17.12-s012_1 () Oct 31 2017 04:30:11 ( )
+[12/19 11:06:54      9s] @(#)CDS: CPE v17.12-s076
+[12/19 11:06:54      9s] @(#)CDS: IQRC/TQRC 16.1.1-s220 (64bit) Fri Aug  4 09:53:48 PDT 2017 (Linux 2.6.18-194.el5)
+[12/19 11:06:54      9s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[12/19 11:06:54      9s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[12/19 11:06:54      9s] @(#)CDS: RCDB 11.10
+[12/19 11:06:54      9s] --- Running on cadence5 (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (4cores*4cpus*Intel(R) Xeon(R) CPU E5-1607 v3 @ 3.10GHz 10240KB) ---
+[12/19 11:06:54      9s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_3340_cadence5_vlsi5_imJGox.
+
+[12/19 11:06:54      9s] Change the soft stacksize limit to 0.2%RAM (15 mbytes). Set global soft_stack_size_limit to change the value.
+[12/19 11:06:55     10s] 
+[12/19 11:06:55     10s] **INFO:  MMMC transition support version v31-84 
+[12/19 11:06:55     10s] 
+[12/19 11:06:55     10s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[12/19 11:06:55     10s] <CMD> suppressMessage ENCEXT-2799
+[12/19 11:06:55     10s] <CMD> getVersion
+[12/19 11:06:55     10s] <CMD> getVersion
+[12/19 11:06:56     10s] [INFO] Loading PVS 16.12-s208 fill procedures
+[12/19 11:06:57     10s] <CMD> getDrawView
+[12/19 11:06:57     10s] <CMD> loadWorkspace -name Physical
+[12/19 11:06:58     10s] <CMD> win
+[12/19 11:07:08     11s] <CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+[12/19 11:07:08     11s] <CMD> set conf_qxconf_file NULL
+[12/19 11:07:08     11s] <CMD> set conf_qxlib_file NULL
+[12/19 11:07:08     11s] <CMD> set defHierChar /
+[12/19 11:07:08     11s] <CMD> set distributed_client_message_echo 1
+[12/19 11:07:08     11s] <CMD> set distributed_mmmc_disable_reports_auto_redirection 0
+[12/19 11:07:08     11s] <CMD> set eco_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+[12/19 11:07:08     11s] <CMD> set enc_enable_print_mode_command_reset_options 1
+[12/19 11:07:08     11s] <CMD> set init_gnd_net {VSS VSSO 1VSS 1VSSO 2VSS 2VSSO 3VSS 3VSSO}
+[12/19 11:07:08     11s] <CMD> set init_io_file innovusinputfiles/padframe_ram1.io
+[12/19 11:07:08     11s] <CMD> set init_lef_file {../../../pdk/scl_pdk/stdlib/fs120/tech_data/lef/tsl180l4.lef ../../../pdk/scl_pdk/stdlib/fs120/lef/tsl18fs120_scl.lef ../../../pdk/scl_pdk/iolib/cio250/cds/lef/tsl18cio250_4lm.lef}
+[12/19 11:07:08     11s] <CMD> set init_mmmc_file innovusinputfiles/viewDefinition.tcl
+[12/19 11:07:08     11s] <CMD> set init_pwr_net {VDD VDDO 1VDD 1VDDO 2VDD 2VDDO 3VDD 3VDDO}
+[12/19 11:07:08     11s] <CMD> set init_verilog innovusinputfiles/ram_netlist.v
+[12/19 11:07:08     11s] <CMD> set latch_time_borrow_mode max_borrow
+[12/19 11:07:08     11s] <CMD> set pegDefaultResScaleFactor 1
+[12/19 11:07:08     11s] <CMD> set pegDetailResScaleFactor 1
+[12/19 11:07:08     11s] <CMD> set report_inactive_arcs_format {from to when arc_type sense reason}
+[12/19 11:07:08     11s] <CMD> set soft_stack_size_limit 15
+[12/19 11:07:08     11s] <CMD> set tso_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+[12/19 11:07:09     11s] <CMD> init_design
+[12/19 11:07:09     11s] #% Begin Load MMMC data ... (date=12/19 11:07:09, mem=493.7M)
+[12/19 11:07:09     11s] #% End Load MMMC data ... (date=12/19 11:07:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=493.7M, current mem=493.2M)
+[12/19 11:07:10     11s] 
+[12/19 11:07:10     11s] Loading LEF file ../../../pdk/scl_pdk/stdlib/fs120/tech_data/lef/tsl180l4.lef ...
+[12/19 11:07:10     11s] 
+[12/19 11:07:10     11s] Loading LEF file ../../../pdk/scl_pdk/stdlib/fs120/lef/tsl18fs120_scl.lef ...
+[12/19 11:07:10     11s] Set DBUPerIGU to M2 pitch 560.
+[12/19 11:07:10     11s] 
+[12/19 11:07:10     11s] Loading LEF file ../../../pdk/scl_pdk/iolib/cio250/cds/lef/tsl18cio250_4lm.lef ...
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'apc3d01' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03ed' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b21eu' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b25eu' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3d00' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/19 11:07:10     11s] Type 'man IMPLF-200' for more detail.
+[12/19 11:07:10     11s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[12/19 11:07:10     11s] To increase the message display limit, refer to the product command reference manual.
+[12/19 11:07:10     11s] 
+[12/19 11:07:10     11s] viaInitial starts at Tue Dec 19 11:07:10 2023
+viaInitial ends at Tue Dec 19 11:07:10 2023
+Loading view definition file from innovusinputfiles/viewDefinition.tcl
+[12/19 11:07:10     11s] Reading my_max_library_set timing library '/home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib' ...
+[12/19 11:07:10     11s] Both ff/latch and statetable are present in cell 'lanht4'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+[12/19 11:07:10     12s] Both ff/latch and statetable are present in cell 'lanht2'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+[12/19 11:07:10     12s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'I' of cell 'bh01d1' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+[12/19 11:07:10     12s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'I' of cell 'bh01d1' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+[12/19 11:07:11     12s] Both ff/latch and statetable are present in cell 'lanht1'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+[12/19 11:07:11     12s] Read 534 cells in library 'tsl18fs120_scl_ss' 
+[12/19 11:07:11     12s] Reading my_max_library_set timing library '/home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib' ...
+[12/19 11:07:11     12s] **ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1171)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1185)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1408)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1422)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1644)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1658)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1880)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1894)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2117)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2131)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2354)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2368)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2590)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2604)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2827)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2841)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3071)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3085)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3308)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3322)
+Message <TECHLIB-1318> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[12/19 11:07:11     12s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'XOUT' of cell 'pc3x11' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/19 11:07:11     12s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'XOUT' of cell 'pc3x11' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/19 11:07:11     12s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'XOUT' of cell 'pc3x12' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/19 11:07:11     12s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'XOUT' of cell 'pc3x12' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/19 11:07:11     12s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'XOUT' of cell 'pc3x13' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/19 11:07:11     12s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'XOUT' of cell 'pc3x13' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/19 11:07:11     12s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'PAD' of cell 'pc3d00' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/19 11:07:11     12s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'PAD' of cell 'pc3d00' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/19 11:07:11     12s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'PADR' of cell 'pc3d00' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/19 11:07:11     12s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'PADR' of cell 'pc3d00' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/19 11:07:11     12s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVSSO' of cell 'apv0a' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/19 11:07:11     12s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVSSO' of cell 'apv0a' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/19 11:07:11     12s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVSS' of cell 'apv0i' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/19 11:07:11     12s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVSS' of cell 'apv0i' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/19 11:07:11     12s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVDDO' of cell 'apvda' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/19 11:07:11     12s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVDDO' of cell 'apvda' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/19 11:07:11     12s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVDD' of cell 'apvdi' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/19 11:07:11     12s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVDD' of cell 'apvdi' is not defined in the library. (File /home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/19 11:07:11     12s] Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[12/19 11:07:11     12s] Read 93 cells in library 'tsl18cio250_max' 
+[12/19 11:07:11     12s] Reading my_min_library_set timing library '/home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib' ...
+[12/19 11:07:11     12s] Both ff/latch and statetable are present in cell 'lanht4'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib)
+[12/19 11:07:11     12s] Both ff/latch and statetable are present in cell 'lanht2'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib)
+[12/19 11:07:11     13s] Both ff/latch and statetable are present in cell 'lanht1'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib)
+[12/19 11:07:11     13s] Read 534 cells in library 'tsl18fs120_scl_ff' 
+[12/19 11:07:11     13s] Reading my_min_library_set timing library '/home/vlsi5/pdk/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_min.lib' ...
+[12/19 11:07:12     13s] Read 93 cells in library 'tsl18cio250_min' 
+[12/19 11:07:12     13s] *** End library_loading (cpu=0.02min, real=0.03min, mem=30.3M, fe_cpu=0.22min, fe_real=0.63min, fe_mem=573.6M) ***
+[12/19 11:07:12     13s] #% Begin Load netlist data ... (date=12/19 11:07:12, mem=571.3M)
+[12/19 11:07:12     13s] *** Begin netlist parsing (mem=573.6M) ***
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'aoim22d1' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'aoim22d1' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'or04d2' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'or04d2' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'an02d1' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'an02d1' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'nd02da' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'nd02da' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'dl03d2' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'dl03d2' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'invtd7' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'invtd7' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'slnht2' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'slnht2' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'aoim22d2' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'aoim22d2' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'mffnrb2' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'mffnrb2' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'nr03d7' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'nr03d7' is defined in LEF but not in the timing library.
+[12/19 11:07:12     13s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[12/19 11:07:12     13s] To increase the message display limit, refer to the product command reference manual.
+[12/19 11:07:12     13s] Pin 'VDD' of cell 'pvdi' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/19 11:07:12     13s] Pin 'VDDC' of cell 'pvdc' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/19 11:07:12     13s] Pin 'VDDO' of cell 'pvda' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/19 11:07:12     13s] Pin 'VSS' of cell 'pv0i' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/19 11:07:12     13s] Pin 'VSS' of cell 'pv0f' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/19 11:07:12     13s] Pin 'VSSC' of cell 'pv0c' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/19 11:07:12     13s] Pin 'VSSO' of cell 'pv0a' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/19 11:07:12     13s] Pin 'AVDD' of cell 'apvdi' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/19 11:07:12     13s] Pin 'AVDDO' of cell 'apvda' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/19 11:07:12     13s] Pin 'AVSS' of cell 'apv0i' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/19 11:07:12     13s] Pin 'AVSSO' of cell 'apv0a' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/19 11:07:12     13s] Created 627 new cells from 4 timing libraries.
+[12/19 11:07:12     13s] Reading netlist ...
+[12/19 11:07:12     13s] Backslashed names will retain backslash and a trailing blank character.
+[12/19 11:07:12     13s] Reading verilog netlist 'innovusinputfiles/ram_netlist.v'
+[12/19 11:07:12     13s] 
+[12/19 11:07:12     13s] *** Memory Usage v#1 (Current mem = 573.605M, initial mem = 179.895M) ***
+[12/19 11:07:12     13s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=573.6M) ***
+[12/19 11:07:12     13s] #% End Load netlist data ... (date=12/19 11:07:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=571.3M, current mem=521.2M)
+[12/19 11:07:12     13s] Top level cell is single_port_sync_ram.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pt3t03u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pt3t03d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pt3t03' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pt3t02u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pt3t02d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pt3t02' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pt3t01u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pt3t01d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pt3t01' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pt3o03' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pt3o02' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pt3o01' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pc3t05u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pc3t05d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pc3t05' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pc3t04u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pc3t04d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pc3t04' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pc3t03u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPTS-282):	Cell 'pc3t03d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/19 11:07:12     13s] Type 'man IMPTS-282' for more detail.
+[12/19 11:07:12     13s] **WARN: (EMS-27):	Message (IMPTS-282) has exceeded the current message display limit of 20.
+[12/19 11:07:12     13s] To increase the message display limit, refer to the product command reference manual.
+[12/19 11:07:12     13s] Hooked 1254 DB cells to tlib cells.
+[12/19 11:07:12     13s] Starting recursive module instantiation check.
+[12/19 11:07:12     13s] No recursion found.
+[12/19 11:07:12     13s] Building hierarchical netlist for Cell single_port_sync_ram ...
+[12/19 11:07:12     13s] *** Netlist is unique.
+[12/19 11:07:12     13s] ** info: there are 1285 modules.
+[12/19 11:07:12     13s] ** info: there are 1499 stdCell insts.
+[12/19 11:07:12     13s] ** info: there are 40 Pad insts.
+[12/19 11:07:12     13s] 
+[12/19 11:07:12     13s] *** Memory Usage v#1 (Current mem = 597.277M, initial mem = 179.895M) ***
+[12/19 11:07:12     13s] Reading IO assignment file "innovusinputfiles/padframe_ram1.io" ...
+[12/19 11:07:12     13s] Adjusting Core to Left to: 0.3200. Core to Bottom to: 0.3200.
+[12/19 11:07:12     13s] **WARN: (IMPFP-3961):	The techSite 'CO_MSTR_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/19 11:07:12     13s] Type 'man IMPFP-3961' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPFP-3961):	The techSite 'IOSite_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/19 11:07:12     13s] Type 'man IMPFP-3961' for more detail.
+[12/19 11:07:12     13s] Horizontal Layer M1 offset = 0 (derived)
+[12/19 11:07:12     13s] Vertical Layer M2 offset = 280 (derived)
+[12/19 11:07:12     13s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/19 11:07:12     13s] Set Default Net Delay as 1000 ps.
+[12/19 11:07:12     13s] Set Default Net Load as 0.5 pF. 
+[12/19 11:07:12     13s] Set Default Input Pin Transition as 0.1 ps.
+[12/19 11:07:12     13s] Extraction setup Delayed 
+[12/19 11:07:12     13s] *Info: initialize multi-corner CTS.
+[12/19 11:07:12     13s] Reading timing constraints file '/home/vlsi5/praveen_design/single_port_RAM/pd/innovusinputfiles/ram_constraint.sdc' ...
+[12/19 11:07:12     13s] Current (total cpu=0:00:13.6, real=0:00:38.0, peak res=662.9M, current mem=662.9M)
+[12/19 11:07:12     13s] **WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File /home/vlsi5/praveen_design/single_port_RAM/pd/innovusinputfiles/ram_constraint.sdc, Line 56).
+[12/19 11:07:12     13s] 
+[12/19 11:07:12     13s] INFO (CTE): Reading of timing constraints file /home/vlsi5/praveen_design/single_port_RAM/pd/innovusinputfiles/ram_constraint.sdc completed, with 1 WARNING
+[12/19 11:07:12     13s] WARNING (CTE-25): Line: 9, 10 of File /home/vlsi5/praveen_design/single_port_RAM/pd/innovusinputfiles/ram_constraint.sdc : Skipped unsupported command: set_units
+[12/19 11:07:12     13s] 
+[12/19 11:07:12     13s] 
+[12/19 11:07:12     13s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=680.8M, current mem=680.8M)
+[12/19 11:07:12     13s] Current (total cpu=0:00:13.6, real=0:00:38.0, peak res=680.8M, current mem=680.8M)
+[12/19 11:07:12     13s] Creating Cell Server ...(0, 1, 1, 1)
+[12/19 11:07:12     13s] Summary for sequential cells identification: 
+[12/19 11:07:12     13s]   Identified SBFF number: 114
+[12/19 11:07:12     13s]   Identified MBFF number: 0
+[12/19 11:07:12     13s]   Identified SB Latch number: 0
+[12/19 11:07:12     13s]   Identified MB Latch number: 0
+[12/19 11:07:12     13s]   Not identified SBFF number: 6
+[12/19 11:07:12     13s]   Not identified MBFF number: 0
+[12/19 11:07:12     13s]   Not identified SB Latch number: 0
+[12/19 11:07:12     13s]   Not identified MB Latch number: 0
+[12/19 11:07:12     13s]   Number of sequential cells which are not FFs: 83
+[12/19 11:07:12     13s] Total number of combinational cells: 321
+[12/19 11:07:12     13s] Total number of sequential cells: 203
+[12/19 11:07:12     13s] Total number of tristate cells: 10
+[12/19 11:07:12     13s] Total number of level shifter cells: 0
+[12/19 11:07:12     13s] Total number of power gating cells: 0
+[12/19 11:07:12     13s] Total number of isolation cells: 0
+[12/19 11:07:12     13s] Total number of power switch cells: 0
+[12/19 11:07:12     13s] Total number of pulse generator cells: 0
+[12/19 11:07:12     13s] Total number of always on buffers: 0
+[12/19 11:07:12     13s] Total number of retention cells: 0
+[12/19 11:07:12     13s] List of usable buffers: bufbd7 buffd2 bufbdf buffda buffd3 bufbda buffd4 bufbd4 bufbd1 bufbd3 buffd7 buffd1 bufbd2
+[12/19 11:07:12     13s] Total number of usable buffers: 13
+[12/19 11:07:12     13s] List of unusable buffers:
+[12/19 11:07:12     13s] Total number of unusable buffers: 0
+[12/19 11:07:12     13s] List of usable inverters: inv0d2 inv0da invbda invbdk inv0d1 inv0d7 invbd4 inv0d0 invbd2 inv0d4 invbd7 invbdf
+[12/19 11:07:12     13s] Total number of usable inverters: 12
+[12/19 11:07:12     13s] List of unusable inverters:
+[12/19 11:07:12     13s] Total number of unusable inverters: 0
+[12/19 11:07:12     13s] List of identified usable delay cells: dl04d1 dl03d1 dl02d2 dl03d4 dl04d2 dl02d1 dl01d4 bufbdk dl04d4 dl02d4 dl01d2 dl01d1 dl03d2
+[12/19 11:07:12     13s] Total number of identified usable delay cells: 13
+[12/19 11:07:12     13s] List of identified unusable delay cells:
+[12/19 11:07:12     13s] Total number of identified unusable delay cells: 0
+[12/19 11:07:12     13s] Creating Cell Server, finished. 
+[12/19 11:07:12     13s] 
+[12/19 11:07:12     13s] Deleting Cell Server ...
+[12/19 11:07:12     13s] Patterns Extraction called explicitly through PreRoutePatternsIfNeeded call 
+[12/19 11:07:12     13s] Extraction setup Started 
+[12/19 11:07:12     13s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[12/19 11:07:12     13s] **WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[12/19 11:07:12     13s] Type 'man IMPEXT-2773' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 6 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[12/19 11:07:12     13s] Type 'man IMPEXT-2776' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 6 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[12/19 11:07:12     13s] Type 'man IMPEXT-2776' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 2.5 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[12/19 11:07:12     13s] Type 'man IMPEXT-2776' for more detail.
+[12/19 11:07:12     13s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[12/19 11:07:12     13s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[12/19 11:07:12     13s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[12/19 11:07:12     13s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.04 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[12/19 11:07:12     13s] Summary of Active RC-Corners : 
+[12/19 11:07:12     13s]  
+[12/19 11:07:12     13s]  Analysis View: my_analysis_view_setup
+[12/19 11:07:12     13s]     RC-Corner Name        : my_rc_corner_worst
+[12/19 11:07:12     13s]     RC-Corner Index       : 0
+[12/19 11:07:12     13s]     RC-Corner Temperature : 25 Celsius
+[12/19 11:07:12     13s]     RC-Corner Cap Table   : ''
+[12/19 11:07:12     13s]     RC-Corner PreRoute Res Factor         : 1
+[12/19 11:07:12     13s]     RC-Corner PreRoute Cap Factor         : 1
+[12/19 11:07:12     13s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[12/19 11:07:12     13s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[12/19 11:07:12     13s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[12/19 11:07:12     13s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[12/19 11:07:12     13s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[12/19 11:07:12     13s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[12/19 11:07:12     13s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[12/19 11:07:12     13s]  
+[12/19 11:07:12     13s]  Analysis View: my_analysis_view_hold
+[12/19 11:07:12     13s]     RC-Corner Name        : my_rc_corner_worst
+[12/19 11:07:12     13s]     RC-Corner Index       : 0
+[12/19 11:07:12     13s]     RC-Corner Temperature : 25 Celsius
+[12/19 11:07:12     13s]     RC-Corner Cap Table   : ''
+[12/19 11:07:12     13s]     RC-Corner PreRoute Res Factor         : 1
+[12/19 11:07:12     13s]     RC-Corner PreRoute Cap Factor         : 1
+[12/19 11:07:12     13s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[12/19 11:07:12     13s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[12/19 11:07:12     13s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[12/19 11:07:12     13s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[12/19 11:07:12     13s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[12/19 11:07:12     13s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[12/19 11:07:12     13s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[12/19 11:07:12     13s] 
+[12/19 11:07:12     13s] *** Summary of all messages that are not suppressed in this session:
+[12/19 11:07:12     13s] Severity  ID               Count  Summary                                  
+[12/19 11:07:12     13s] WARNING   IMPLF-200           49  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[12/19 11:07:12     13s] WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+[12/19 11:07:12     13s] WARNING   IMPTS-282           92  Cell '%s' is not a level shifter cell bu...
+[12/19 11:07:12     13s] WARNING   IMPEXT-2766          4  The sheet resistance for layer %s is not...
+[12/19 11:07:12     13s] WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+[12/19 11:07:12     13s] WARNING   IMPEXT-2776          3  The via resistance between layers %s and...
+[12/19 11:07:12     13s] WARNING   IMPVL-159         1435  Pin '%s' of cell '%s' is defined in LEF ...
+[12/19 11:07:12     13s] WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+[12/19 11:07:12     13s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[12/19 11:07:12     13s] ERROR     TECHLIB-1318        20  All the table values in the '%s' group a...
+[12/19 11:07:12     13s] *** Message Summary: 1607 warning(s), 20 error(s)
+[12/19 11:07:12     13s] 
+[12/19 11:07:17     14s] <CMD> getIoFlowFlag
+[12/19 11:07:47     16s] <CMD> setIoFlowFlag 0
+[12/19 11:07:47     16s] <CMD> floorPlan -site CoreSite -b 0.0 0.0 1690.0 1690.0 250.0 250.0 1440.0 1440.0 300.32 300.32 1390.0 1390.52
+[12/19 11:07:47     16s] **WARN: (IMPFP-4031):	Adjusting 'coreBox'(according to PlacementGrid) from {(300.320000 , 300.320000) (1390.000000 , 1390.520000)} to {(300.160000 , 300.160000) (1389.920000 , 1390.480000)} due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[12/19 11:07:47     16s] **WARN: (IMPFP-4031):	Adjusting 'DieBox'(according to PlacementGrid) from {(0.000000 , 0.000000) (1690.000000 , 1690.000000)} to {(0.000000 , 0.000000) (1690.080000 , 1690.080000)} due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[12/19 11:07:47     16s] **WARN: (IMPFP-4031):	Adjusting 'ioBox'(according to PlacementGrid) from {(250.000000 , 250.000000) (1440.000000 , 1440.000000)} to {(249.760000 , 249.760000) (1439.760000 , 1439.760000)} due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[12/19 11:07:47     16s] Horizontal Layer M1 offset = 0 (derived)
+[12/19 11:07:47     16s] Vertical Layer M2 offset = 280 (derived)
+[12/19 11:07:47     16s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/19 11:07:47     16s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[12/19 11:07:47     16s] <CMD> uiSetTool select
+[12/19 11:07:47     16s] <CMD> getIoFlowFlag
+[12/19 11:07:47     16s] <CMD> fit
+[12/19 11:07:54     16s] <CMD> setIoFlowFlag 0
+[12/19 11:07:54     16s] <CMD> floorPlan -site CoreSite -b 0.0 0.0 1690.08 1690.08 249.76 249.76 1439.76 1439.76 300.16 300.16 1389.92 1390.48
+[12/19 11:07:54     16s] Horizontal Layer M1 offset = 0 (derived)
+[12/19 11:07:54     16s] Vertical Layer M2 offset = 280 (derived)
+[12/19 11:07:54     16s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/19 11:07:54     16s] <CMD> uiSetTool select
+[12/19 11:07:54     16s] <CMD> getIoFlowFlag
+[12/19 11:07:54     16s] <CMD> fit
+[12/19 11:10:16     25s] <CMD> addIoFiller -cell pfeed02000 -prefix FILLER -side n
+[12/19 11:10:16     25s] Added 140 of filler cell 'pfeed02000' on top side.
+[12/19 11:10:32     26s] <CMD> fit
+[12/19 11:11:15     29s] <CMD> addIoFiller -cell pfeed02000 -prefix FILLER -side e
+[12/19 11:11:15     29s] Added 140 of filler cell 'pfeed02000' on right side.
+[12/19 11:11:44     31s] <CMD> addFiller -cell pfeed02000 -prefix FILLER -side s
+[12/19 11:11:44     31s] 
+[12/19 11:11:44     31s] Usage: addFiller [-help] [-area <x1 y1 x2 y2>] [-cell <cellList>]
+[12/19 11:11:44     31s]                  [-check_signal_drc {true|false}] [-diffCellViol {true|false}]
+[12/19 11:11:44     31s]                  [-ecoMode {true|false}] [-fitGap] [-fixDRC]
+[12/19 11:11:44     31s]                  [-fix_horizontal_max_length_violation]
+[12/19 11:11:44     31s]                  [-fix_vertical_max_length_violation]
+[12/19 11:11:44     31s]                  [-honorPrerouteAsObs {true|false}] [-markFixed]
+[12/19 11:11:44     31s]                  [-merge {true|false}] [-minHole {true|false}]
+[12/19 11:11:44     31s]                  [-powerDomain <powerDomainName>] [-prefix <prefixName>]
+[12/19 11:11:44     31s]                  [-prevent_vertical_stack_max_length_violation]
+[12/19 11:11:44     31s]                  [-util <targetUtilization>] [-viaEnclosure {true|false}] [-createRows {true|false} ]
+[12/19 11:11:44     31s] 
+[12/19 11:11:44     31s] **ERROR: (IMPTCM-48):	"-side" is not a legal option for command "addFiller". Either the current option or an option prior to it is not specified correctly.
+
+[12/19 11:11:59     32s] <CMD> addIoFiller -cell pfeed02000 -prefix FILLER -side s
+[12/19 11:11:59     32s] Added 140 of filler cell 'pfeed02000' on bottom side.
+[12/19 11:12:31     34s] invalid command name "addIofiller"
+[12/19 11:12:48     35s] <CMD> addIoFiller -cell pfeed02000 -prefix FILLER -side w
+[12/19 11:12:48     35s] Added 140 of filler cell 'pfeed02000' on left side.
+[12/19 11:13:34     39s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -override -verbose -netlistOverride
+[12/19 11:13:34     39s] 1555 new pwr-pin connections were made to global net 'VDD'.
+[12/19 11:14:22     43s] <CMD> set sprCreateIeRingOffset 1.0
+[12/19 11:14:22     43s] <CMD> set sprCreateIeRingThreshold 1.0
+[12/19 11:14:22     43s] <CMD> set sprCreateIeRingJogDistance 1.0
+[12/19 11:14:22     43s] <CMD> set sprCreateIeRingLayers {}
+[12/19 11:14:22     43s] <CMD> set sprCreateIeRingOffset 1.0
+[12/19 11:14:22     43s] <CMD> set sprCreateIeRingThreshold 1.0
+[12/19 11:14:22     43s] <CMD> set sprCreateIeRingJogDistance 1.0
+[12/19 11:14:22     43s] <CMD> set sprCreateIeRingLayers {}
+[12/19 11:14:22     43s] <CMD> set sprCreateIeStripeWidth 10.0
+[12/19 11:14:22     43s] <CMD> set sprCreateIeStripeThreshold 1.0
+[12/19 11:14:22     43s] <CMD> set sprCreateIeStripeWidth 10.0
+[12/19 11:14:22     43s] <CMD> set sprCreateIeStripeThreshold 1.0
+[12/19 11:14:22     43s] <CMD> set sprCreateIeRingOffset 1.0
+[12/19 11:14:22     43s] <CMD> set sprCreateIeRingThreshold 1.0
+[12/19 11:14:22     43s] <CMD> set sprCreateIeRingJogDistance 1.0
+[12/19 11:14:22     43s] <CMD> set sprCreateIeRingLayers {}
+[12/19 11:14:22     43s] <CMD> set sprCreateIeStripeWidth 10.0
+[12/19 11:14:22     43s] <CMD> set sprCreateIeStripeThreshold 1.0
+[12/19 11:15:36     51s] <CMD> setAddRingMode -reset
+[12/19 11:15:39     52s] <CMD> setAddRingMode -reset
+[12/19 11:15:39     52s] <CMD> setAddRingMode -reset
+[12/19 11:24:53     89s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/19 11:24:53     89s] The ring targets are set to core/block ring wires.
+[12/19 11:24:53     89s] addRing command will consider rows while creating rings.
+[12/19 11:24:53     89s] addRing command will disallow rings to go over rows.
+[12/19 11:24:53     89s] addRing command will ignore shorts while creating rings.
+[12/19 11:24:53     89s] <CMD> addRing -nets {1VDD 1VDDO 1VSS 1VSSO 2VDD 2VDDO 2VSS 2VSSO 3VDD 3VDDO 3VSS 3VSSO VDD VDDO VSS VSSO} -type block_rings -around each_block -layer {top M1 bottom M2 left M2 right M1} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[12/19 11:24:53     89s] 
+[12/19 11:24:53     89s] **WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+[12/19 11:24:53     89s] Ring generation is complete.
+[12/19 11:26:10     96s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/19 11:26:10     96s] The ring targets are set to core/block ring wires.
+[12/19 11:26:10     96s] addRing command will consider rows while creating rings.
+[12/19 11:26:10     96s] addRing command will disallow rings to go over rows.
+[12/19 11:26:10     96s] addRing command will ignore shorts while creating rings.
+[12/19 11:26:10     96s] <CMD> addRing -nets {1VDD 1VDDO 1VSS 1VSSO 2VDD 2VDDO 2VSS 2VSSO 3VDD 3VDDO 3VSS 3VSSO VDD VDDO VSS VSSO} -type block_rings -around each_block -layer {top M1 bottom M2 left M2 right M1} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[12/19 11:26:10     96s] 
+[12/19 11:26:10     96s] **WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+[12/19 11:26:10     96s] Ring generation is complete.
+[12/19 11:26:12     96s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/19 11:26:12     96s] The ring targets are set to core/block ring wires.
+[12/19 11:26:12     96s] addRing command will consider rows while creating rings.
+[12/19 11:26:12     96s] addRing command will disallow rings to go over rows.
+[12/19 11:26:12     96s] addRing command will ignore shorts while creating rings.
+[12/19 11:26:12     96s] <CMD> addRing -nets {1VDD 1VDDO 1VSS 1VSSO 2VDD 2VDDO 2VSS 2VSSO 3VDD 3VDDO 3VSS 3VSSO VDD VDDO VSS VSSO} -type block_rings -around each_block -layer {top M1 bottom M2 left M2 right M1} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[12/19 11:26:12     96s] 
+[12/19 11:26:12     96s] **WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+[12/19 11:26:12     96s] Ring generation is complete.
+[12/19 11:26:44     99s] <CMD> pan -147.813 115.479
+[12/19 11:27:02    101s] <CMD> pan -725.950 -150.196
+[12/19 11:27:12    102s] <CMD> fit
+[12/19 11:27:48    105s] <CMD> fit
+[12/19 11:28:49    110s] <CMD> fit
+[12/19 11:28:59    111s] <CMD> uiSetTool ruler
+[12/19 11:29:30    114s] <CMD> fit
+[12/19 11:30:09    118s] <CMD> fit
+[12/19 11:31:13    123s] <CMD> getIoFlowFlag
+[12/19 11:31:38    126s] <CMD> setIoFlowFlag 0
+[12/19 11:31:38    126s] <CMD> floorPlan -site CoreSite -b 0.0 0.0 1690.08 1690.08 249.76 249.76 1439.76 1439.76 300.16 300.16 1386.92 1390.48
+[12/19 11:31:38    126s] **WARN: (IMPFP-4031):	Adjusting 'coreBox'(according to PlacementGrid) from {(300.160000 , 300.160000) (1386.920000 , 1390.480000)} to {(300.160000 , 300.160000) (1387.120000 , 1390.480000)} due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[12/19 11:31:38    126s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'N' between IOs 'FILLER_N_43' and '1VSSO'.
+[12/19 11:31:38    126s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'W' between IOs 'FILLER_W_43' and 'VSSO'.
+[12/19 11:31:38    126s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'S' between IOs 'FILLER_S_43' and '3VSSO'.
+[12/19 11:31:38    126s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'E' between IOs 'FILLER_E_43' and '2VSSO'.
+[12/19 11:31:38    126s] Horizontal Layer M1 offset = 0 (derived)
+[12/19 11:31:38    126s] Vertical Layer M2 offset = 280 (derived)
+[12/19 11:31:38    126s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/19 11:31:38    126s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[12/19 11:31:38    126s] <CMD> uiSetTool select
+[12/19 11:31:38    126s] <CMD> getIoFlowFlag
+[12/19 11:31:38    126s] <CMD> fit
+[12/19 11:32:01    127s] <CMD> setIoFlowFlag 0
+[12/19 11:32:01    127s] <CMD> floorPlan -site CoreSite -b 0.0 0.0 1690.08 1690.08 249.76 249.76 1439.76 1439.76 300.16 300.16 1390.12 1390.48
+[12/19 11:32:01    127s] **WARN: (IMPFP-4031):	Adjusting 'coreBox'(according to PlacementGrid) from {(300.160000 , 300.160000) (1390.120000 , 1390.480000)} to {(300.160000 , 300.160000) (1389.920000 , 1390.480000)} due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[12/19 11:32:01    127s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'N' between IOs 'FILLER_N_43' and '1VSSO'.
+[12/19 11:32:01    127s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'W' between IOs 'FILLER_W_43' and 'VSSO'.
+[12/19 11:32:01    127s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'S' between IOs 'FILLER_S_43' and '3VSSO'.
+[12/19 11:32:01    127s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'E' between IOs 'FILLER_E_43' and '2VSSO'.
+[12/19 11:32:01    127s] Horizontal Layer M1 offset = 0 (derived)
+[12/19 11:32:01    127s] Vertical Layer M2 offset = 280 (derived)
+[12/19 11:32:01    127s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/19 11:32:01    127s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[12/19 11:32:01    127s] <CMD> uiSetTool select
+[12/19 11:32:01    127s] <CMD> getIoFlowFlag
+[12/19 11:32:01    127s] <CMD> fit
+[12/19 11:32:02    127s] <CMD> setIoFlowFlag 0
+[12/19 11:32:02    127s] <CMD> floorPlan -site CoreSite -b 0.0 0.0 1690.08 1690.08 249.76 249.76 1439.76 1439.76 300.16 300.16 1389.92 1390.48
+[12/19 11:32:02    127s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'N' between IOs 'FILLER_N_43' and '1VSSO'.
+[12/19 11:32:02    127s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'W' between IOs 'FILLER_W_43' and 'VSSO'.
+[12/19 11:32:02    127s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'S' between IOs 'FILLER_S_43' and '3VSSO'.
+[12/19 11:32:02    127s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'E' between IOs 'FILLER_E_43' and '2VSSO'.
+[12/19 11:32:02    127s] Horizontal Layer M1 offset = 0 (derived)
+[12/19 11:32:02    127s] Vertical Layer M2 offset = 280 (derived)
+[12/19 11:32:02    127s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/19 11:32:02    127s] <CMD> uiSetTool select
+[12/19 11:32:02    127s] <CMD> getIoFlowFlag
+[12/19 11:32:02    127s] <CMD> fit
+[12/19 11:32:02    128s] <CMD> setIoFlowFlag 0
+[12/19 11:32:02    128s] <CMD> floorPlan -site CoreSite -b 0.0 0.0 1690.08 1690.08 249.76 249.76 1439.76 1439.76 300.16 300.16 1389.92 1390.48
+[12/19 11:32:02    128s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'N' between IOs 'FILLER_N_43' and '1VSSO'.
+[12/19 11:32:02    128s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'W' between IOs 'FILLER_W_43' and 'VSSO'.
+[12/19 11:32:02    128s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'S' between IOs 'FILLER_S_43' and '3VSSO'.
+[12/19 11:32:02    128s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'E' between IOs 'FILLER_E_43' and '2VSSO'.
+[12/19 11:32:02    128s] Horizontal Layer M1 offset = 0 (derived)
+[12/19 11:32:02    128s] Vertical Layer M2 offset = 280 (derived)
+[12/19 11:32:02    128s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/19 11:32:02    128s] <CMD> uiSetTool select
+[12/19 11:32:02    128s] <CMD> getIoFlowFlag
+[12/19 11:32:02    128s] <CMD> fit
+[12/19 11:32:03    128s] <CMD> setIoFlowFlag 0
+[12/19 11:32:03    128s] <CMD> floorPlan -site CoreSite -b 0.0 0.0 1690.08 1690.08 249.76 249.76 1439.76 1439.76 300.16 300.16 1389.92 1390.48
+[12/19 11:32:03    128s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'N' between IOs 'FILLER_N_43' and '1VSSO'.
+[12/19 11:32:03    128s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'W' between IOs 'FILLER_W_43' and 'VSSO'.
+[12/19 11:32:03    128s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'S' between IOs 'FILLER_S_43' and '3VSSO'.
+[12/19 11:32:03    128s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'E' between IOs 'FILLER_E_43' and '2VSSO'.
+[12/19 11:32:03    128s] Horizontal Layer M1 offset = 0 (derived)
+[12/19 11:32:03    128s] Vertical Layer M2 offset = 280 (derived)
+[12/19 11:32:03    128s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/19 11:32:03    128s] <CMD> uiSetTool select
+[12/19 11:32:03    128s] <CMD> getIoFlowFlag
+[12/19 11:32:03    128s] <CMD> fit
+[12/19 11:32:11    128s] <CMD> getIoFlowFlag
+[12/19 11:32:59    132s] <CMD> setIoFlowFlag 0
+[12/19 11:32:59    132s] <CMD> floorPlan -site CoreSite -b 0.0 0.0 1690.08 1690.08 249.76 249.76 1439.76 1439.76 250.16 250.16 1440.92 1440.48
+[12/19 11:32:59    132s] **WARN: (IMPFP-4031):	Adjusting 'coreBox'(according to PlacementGrid) from {(250.160000 , 250.160000) (1440.920000 , 1440.480000)} to {(250.320000 , 250.320000) (1440.880000 , 1440.320000)} due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[12/19 11:32:59    132s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'N' between IOs 'FILLER_N_43' and '1VSSO'.
+[12/19 11:32:59    132s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'W' between IOs 'FILLER_W_43' and 'VSSO'.
+[12/19 11:32:59    132s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'S' between IOs 'FILLER_S_43' and '3VSSO'.
+[12/19 11:32:59    132s] **WARN: (IMPFP-3108):	The tool will relocate the IOs because of not enough space to accommodate the IOs for side 'E' between IOs 'FILLER_E_43' and '2VSSO'.
+[12/19 11:32:59    132s] Horizontal Layer M1 offset = 0 (derived)
+[12/19 11:32:59    132s] Vertical Layer M2 offset = 280 (derived)
+[12/19 11:32:59    132s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/19 11:32:59    132s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[12/19 11:32:59    132s] <CMD> uiSetTool select
+[12/19 11:32:59    132s] <CMD> getIoFlowFlag
+[12/19 11:32:59    132s] <CMD> fit
+[12/19 11:33:29    135s] 
+[12/19 11:33:29    135s] *** Memory Usage v#1 (Current mem = 985.215M, initial mem = 179.895M) ***
+[12/19 11:33:29    135s] 
+[12/19 11:33:29    135s] *** Summary of all messages that are not suppressed in this session:
+[12/19 11:33:29    135s] Severity  ID               Count  Summary                                  
+[12/19 11:33:29    135s] WARNING   IMPLF-200           49  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[12/19 11:33:29    135s] WARNING   IMPFP-3108          24  The tool will relocate the IOs because o...
+[12/19 11:33:29    135s] WARNING   IMPFP-325            4  Floorplan of the design is resized. All ...
+[12/19 11:33:29    135s] WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+[12/19 11:33:29    135s] WARNING   IMPFP-4031           6  Adjusting '%s'(according to %s) from %s ...
+[12/19 11:33:29    135s] WARNING   IMPTS-282           92  Cell '%s' is not a level shifter cell bu...
+[12/19 11:33:29    135s] WARNING   IMPEXT-2766          4  The sheet resistance for layer %s is not...
+[12/19 11:33:29    135s] WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+[12/19 11:33:29    135s] WARNING   IMPEXT-2776          3  The via resistance between layers %s and...
+[12/19 11:33:29    135s] WARNING   IMPVL-159         1435  Pin '%s' of cell '%s' is defined in LEF ...
+[12/19 11:33:29    135s] WARNING   IMPPP-4051           3  Fail to add rings. Gaps among IO cells m...
+[12/19 11:33:29    135s] ERROR     IMPTCM-48            1  "%s" is not a legal option for command "...
+[12/19 11:33:29    135s] WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+[12/19 11:33:29    135s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[12/19 11:33:29    135s] ERROR     TECHLIB-1318        20  All the table values in the '%s' group a...
+[12/19 11:33:29    135s] *** Message Summary: 1644 warning(s), 21 error(s)
+[12/19 11:33:29    135s] 
+[12/19 11:33:29    135s] --- Ending "Innovus" (totcpu=0:02:16, real=0:26:55, mem=985.2M) ---

@@ -1,0 +1,16 @@
+                          CONFORMAL (R)
+                   Version 17.20-s300 (10-Feb-2018) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2018. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Warning: This version is 2136 days old. You can download the latest version from http://downloads.cadence.com.
+
+// Command: read library /home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ff -liberty
+// Error: File '/home/vlsi5/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ff' is a directory.
+// Error: FIL1.2: Failed to open file
+//  Library file not found
+// Error: Read library failed
